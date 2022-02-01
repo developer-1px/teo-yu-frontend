@@ -1,10 +1,11 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-aec3b7a0.js",
+    "file": "start-1b8dc4cc.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-427a5d82.js"
+      "_vendor-427a5d82.js",
+      "_paths-4b3c6e7e.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -14,12 +15,13 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-fe209f94.js",
+    "file": "pages/__layout.svelte-d652f0d3.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-427a5d82.js"
+      "_vendor-427a5d82.js",
+      "_paths-4b3c6e7e.js"
     ],
     "css": [
       "assets/pages/__layout.svelte-923091eb.css"
@@ -59,6 +61,9 @@
   },
   "_vendor-427a5d82.js": {
     "file": "chunks/vendor-427a5d82.js"
+  },
+  "_paths-4b3c6e7e.js": {
+    "file": "chunks/paths-4b3c6e7e.js"
   },
   "_Talk_2022.2.1 16_35-2.txt-d9dc4b27.js": {
     "file": "chunks/Talk_2022.2.1 16_35-2.txt-d9dc4b27.js"
