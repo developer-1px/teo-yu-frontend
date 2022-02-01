@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-16c76623.js",
+    "file": "start-2045b749.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -50,7 +50,7 @@
     ]
   },
   "src/routes/talk.svelte": {
-    "file": "pages/talk.svelte-5eb419ea.js",
+    "file": "pages/talk.svelte-1ffbe089.js",
     "src": "src/routes/talk.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
