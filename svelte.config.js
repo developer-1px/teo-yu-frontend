@@ -21,7 +21,7 @@ const config = {
 }
 
 if (process.env.NODE_ENV === "production") {
-  config.kit.paths = {base: "/teo.yu-frontend"}
+  config.kit.paths = {base: "/teo-yu-frontend"}
 }
 
 export default config
