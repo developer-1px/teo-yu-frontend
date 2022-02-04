@@ -10,16 +10,16 @@ ol,ul,menu,dir{list-style:none;}
 .\>\>a\:color\(\#4f80ff\) a{color:#4f80ff}
 .c\(\#888\){color:#888;}
 .c\(\#999\){color:#999;}
+.font\(20\){font-size:20px}
 .font\(10\){font-size:10px}
 .font\(24\){font-size:24px}
 .font\(16\){font-size:16px}
 .font\(12\){font-size:12px}
 .font\(11\){font-size:11px}
 .font\(13\){font-size:13px}
-.font\(20\){font-size:20px}
 .bold{font-weight:bold;}
-@media(hover:hover){.\>\>a\:hover\:underline a:hover, .\>\>a\:hover\:underline a.\:hover{text-decoration:underline;}}
 @media(hover:hover){.hover\:underline:hover, .hover\:underline.\:hover{text-decoration:underline;}}
+@media(hover:hover){.\>\>a\:hover\:underline a:hover, .\>\>a\:hover\:underline a.\:hover{text-decoration:underline;}}
 .grid{display:grid;}
 .hbox{display:flex;flex-flow:row;align-items:center;;}
 .hbox\(top\+center\){display:flex;flex-flow:row;align-items:flex-start;justify-content:center;;}
@@ -27,16 +27,16 @@ ol,ul,menu,dir{list-style:none;}
 .hbox\(bottom\){display:flex;flex-flow:row;align-items:flex-end;;}
 .vbox{display:flex;flex-flow:column;align-items:stretch;;}
 .pack{display:flex;align-items:center;justify-content:center;}
+.gap\(20\){gap:20px;}
 .gap\(10\){gap:10px;}
 .gap\(4\){gap:4px;}
-.gap\(20\){gap:20px;}
 .gap\(8\){gap:8px;}
 .flex{flex:1;}
+.w\(32\){width:32px;}
 .w\(100\%\){width:100%;}
 .w\(800\){width:800px;}
 .w\(\~100\%\){max-width:100%;}
 .w\(\~100\%-50px\){max-width:calc(100% - 50px);}
-.w\(32\){width:32px;}
 .w\(600\){width:600px;}
 .w\(16\){width:16px;}
 .h\(32\){height:32px;}
@@ -58,11 +58,11 @@ ol,ul,menu,dir{list-style:none;}
 .pl\(40\){padding-left:40px;}
 .b\(\#000\.1\){border:solid 1px rgba(0,0,0,.1);}
 .\.active\:bb\(4px\/hsl\(100\,75\%\,75\%\)\).active, .active .\.active\:bb\(4px\/hsl\(100\,75\%\,75\%\)\){border-bottom:solid 4px hsl(100,75%,75%);}
+.r\(100\%\){border-radius:100%;}
 .r\(100\){border-radius:100px;}
 .r\(10\){border-radius:10px;}
 .r\(2\){border-radius:2px;}
 .r\(8\){border-radius:8px;}
-.r\(100\%\){border-radius:100%;}
 .rtl\(0\){border-top-left-radius:0;}
 @media(hover:hover){.hover\:box-shadow\(0\/0\/10px\/\#000\.1\):hover, .hover\:box-shadow\(0\/0\/10px\/\#000\.1\).\:hover{box-shadow:0 0 10px rgba(0,0,0,.1)}}
 .bg\(\#fff\){background-color:#fff;}
