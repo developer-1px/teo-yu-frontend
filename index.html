@@ -8,13 +8,13 @@
   <meta http-equiv="content-security-policy" content="">
 	<link rel="stylesheet" href="/teo-yu-frontend/_app/assets/pages/__layout.svelte-fb311abd.css">
 	<link rel="stylesheet" href="/teo-yu-frontend/_app/assets/pages/index.svelte-aaecba9f.css">
-	<link rel="modulepreload" href="/teo-yu-frontend/_app/start-c06de9c9.js">
+	<link rel="modulepreload" href="/teo-yu-frontend/_app/start-444e616c.js">
 	<link rel="modulepreload" href="/teo-yu-frontend/_app/chunks/vendor-427a5d82.js">
 	<link rel="modulepreload" href="/teo-yu-frontend/_app/chunks/paths-4b3c6e7e.js">
 	<link rel="modulepreload" href="/teo-yu-frontend/_app/pages/__layout.svelte-08f3cfb9.js">
-	<link rel="modulepreload" href="/teo-yu-frontend/_app/pages/index.svelte-63007a89.js">
-	<link rel="modulepreload" href="/teo-yu-frontend/_app/chunks/Talk-2.txt-519f9440.js"><script type="module">
-		import { start } from "/teo-yu-frontend/_app/start-c06de9c9.js";
+	<link rel="modulepreload" href="/teo-yu-frontend/_app/pages/index.svelte-3c71892c.js">
+	<link rel="modulepreload" href="/teo-yu-frontend/_app/chunks/Talk-2.txt-48e5e27a.js"><script type="module">
+		import { start } from "/teo-yu-frontend/_app/start-444e616c.js";
 		start({
 			target: document.querySelector("#svelte"),
 			paths: {"base":"/teo-yu-frontend","assets":"/teo-yu-frontend"},
@@ -27,7 +27,7 @@
 				error: null,
 				nodes: [
 					import("/teo-yu-frontend/_app/pages/__layout.svelte-08f3cfb9.js"),
-						import("/teo-yu-frontend/_app/pages/index.svelte-63007a89.js")
+						import("/teo-yu-frontend/_app/pages/index.svelte-3c71892c.js")
 				],
 				url: new URL("http://sveltekit-prerender/teo-yu-frontend"),
 				params: {}
@@ -56,7 +56,123 @@
   <div class="flex"></div>
   <a href="https://github.com/developer-1px/teo-yu-frontend" target="_blank" class="w(32) h(32) r(100%) clip cover" style="background-image:url(https://avatars.githubusercontent.com/u/66650330?s=400&u=f7e0583060061b825231e6aa0e23bcca76dc31c6&v=4)"></a></div>
 
-<div><div class="p(0/20) pt(60) bold">2022년 2월 3일 목요일
+<div><div class="p(0/20) pt(60) bold">2022년 2월 4일 금요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://engineering.linecorp.com/ko/blog/line-securities-frontend-4/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://engineering.linecorp.com/wp-content/uploads/2021/03/0407.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">requestIdleCallback으로 초기 렌더링 시간 14% 단축하기 - LINE ENGINEERING</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">안녕하세요. LINE 증권의 프런트 엔드를 담당하고 있는 파이낸셜 개발 센터의 Suzuki입니다. 최근 웹 바이탈이 대두되면서 LINE 증권 프런트 엔드에서도 성능 개선에 힘쓰기 시작했습니다. 약 2주 정도 개선 작업을 진행한 뒤 개발 환경에서 계측한 결과, Lighthouse 성능 점수가 기존보다 30점가량 상승했습니다. 성능을 개선하기 위해 다양한 방안을 실시했는데요. 이번 글에서는 그중에서도 흥미로웠던 사례로 requestIdleCallback을 활용해서 레이지 로딩(lazy loading) 가능한 컴포넌트의 로딩을 지연시켜 초기 렌더링 시간을 약 14% 단축할 수 있었던 이야기를 공유하겠습니다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://engineering.linecorp.com/wp-content/uploads/2019/04/cropped-linev_favicon_1x1_transparent-32x32.png)"></div>
+              <div class="flex nowrap...">LINE ENGINEERING</div>
+            </div></div>
+        </a><a href="https://yceffort.kr/2021/08/requestIdlecallback" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://asia-northeast3-yceffort.cloudfunctions.net/screenshot?slug=2021%2F08%2FrequestIdlecallback&amp;tags=javascript%2Cnodejs%2Cbrowser&amp;title=requestIdleCallback%EC%9C%BC%EB%A1%9C%20%EC%B5%9C%EC%A0%81%ED%99%94%ED%95%98%EA%B8%B0&amp;url=https%3A%2F%2Fyceffort.kr%2F2021%2F08%2FrequestIdlecallback">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">requestIdleCallback으로 최적화하기</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">yceffort&#39;s blog</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://yceffort.kr/favicon/android-icon-192x192.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developers.google.com/web/updates/2015/08/using-requestidlecallback" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developers.google.com/web/images/social-webfu-16x9.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Using requestIdleCallback  |  Web  |  Google Developers</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">requestIdleCallback is new performance API for scheduling work when the browser is idle.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.gstatic.com/devrel-devsite/prod/v93a6dcf50ad5e38e51034415df5b4a8345b5c8613f785e48818ae468dabf73c8/developers/images/favicon.png)"></div>
+              <div class="flex nowrap...">Google Developers</div>
+            </div></div>
+        </a><a href="https://www.w3.org/TR/requestidlecallback/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Cooperative Scheduling of Background Tasks</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">This document defines an API that web page authors can use to cooperatively schedule background tasks such that they do not introduce delays to other high priority tasks that share the same event loop, such as input processing, animations and frame compositing. The user agent is in a better position to determine when background tasks can be run without introducing user-perceptible delays or jank in animations and input response, based on its knowledge of currently scheduled tasks, vsync deadlines, user-interaction and so on. Using this API should therefore result in more appropriate scheduling of background tasks during times when the browser would otherwise be idle.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.w3.org/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://svelte.dev/blog/svelte-css-in-js" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://svelte.dev/images/twitter-thumbnail.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Using CSS-in-JS with Svelte</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">You don&#39;t need to, but you can</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://svelte.dev/favicon.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://all-dev-kang.tistory.com/entry/%EB%A6%AC%EC%95%A1%ED%8A%B8-VAC-%ED%8C%A8%ED%84%B4%EC%97%90-%EB%8C%80%ED%95%9C-%ED%9A%8C%EA%B3%A0-%EB%B0%8F-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8#%EB%A7%88%EB%AC%B4%EB%A6%AC" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRCw6A%2FbtrscN8gB0I%2FlqlvE6xnyj9KXb5VQ3y7wK%2Fimg.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">[리액트] VAC 패턴 적용 후기 및 업데이트</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">VAC 패턴을 접하고 리뷰? 글을 쓴 지 어느덧 반년이 되었습니다. 나름 빨리 글을 작성한 것인지 이젠 VAC 패턴을 검색하면 상위에 랭크되는 글이 되었네요.  글을 작성한 이후로 새로운 프로젝트에 VAC 패턴을 적..</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://t1.daumcdn.net/tistory_admin/static/top/favicon_0630.ico)"></div>
+              <div class="flex nowrap...">편리함을 추구하는 개발자의 지식 블로그</div>
+            </div></div>
+        </a><a href="https://linear.app/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://linear.app/static/metaImage4.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Linear – The issue tracking tool you&#39;ll enjoy using</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Linear helps streamline software projects, sprints, tasks, and bug tracking. It’s built for high-performance teams.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://linear.app/static/favicon.ico)"></div>
+              <div class="flex nowrap...">Linear</div>
+            </div></div>
+        </a><a href="https://clickup.com/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://clickup.com/landing/images/clickup-logo-gradient.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">
+    ClickUp™ | One app to replace them all
+  </div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Our mission is to make the world more productive. To do this, we built one app to replace them all - Tasks, Docs, Goals, and Chat.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://clickup.com/landing/favicons/favicon-16x16.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://swit.io/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://swit.io/assets/images/meta/og_main_v2.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Swit - OS for the Future of Work</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">An Employee Productivity Hub for Collaboration Essentials</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://swit.io/assets/images/favicon/favicon-16-normal.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://coda.io/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://coda.io/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer-1px.github.io/teo-yu-frontend/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/23984/preview_image/rem.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://developer-1px.github.io/teo-yu-frontend/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer-1px.github.io/teo-yu-frontend/favicon.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.youtube.com/watch?v=BfqSxFOe664&amp;feature=youtu.be" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/BfqSxFOe664/maxresdefault.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">연차별 직책별 망한 커리어의 기준</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">직장생활의 고민을 나누고 성장하고 싶은 사람들과 함께 도전하고 싶다면?👉 https://bit.ly/3z6YYHo직장생활에 지친 직장인 필독서 [JOY AT WORK]👉 https://bit.ly/3mSlxgg지금 당장 퇴사하고 더 좋은 회사로 이직하고 싶다면?👉 https:...</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
+              <div class="flex nowrap...">YouTube</div>
+            </div></div>
+        </a><a href="https://imagekit.io/blog/lazy-loading-images-complete-guide/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://imagekit.io/blog/content/images/2020/01/Lazy-Loading-Images-for-image-optimization-blog.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Lazy Loading Images – The Complete Guide</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Everything about Image Lazy loading - what is it, why is it important, how to implement lazy loading of images and the best UX practices for the same.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://imagekit.io/blog/favicon.png)"></div>
+              <div class="flex nowrap...">ImageKit.io Blog</div>
+            </div></div>
+        </a><a href="https://ui.toast.com/weekly-pick/ko_20210107/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://uicdn.toast.com/toastui/img/og-image.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">타입스크립트 정리: 전통적인 OOP 패턴 피하기</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">이 글은 타입스크립트 코드를 깔끔하게 작성하는 방법에 대해 다루는 세 번째 글이다. 이 시리즈에서 당신의 의견과 다른 내용이 있을 수 있지만 필자의 개인 의견이니 이해바란다. 이 글에서는 객체 지향 프로그래밍의 패턴(Patterns of Object-Oriented Programming)에 대해 살펴볼 것이다. 기존의 OOP는 대부분 클래스 기반 OOP를 의미하며, 많은 개발자들이 OOP를 사용할 때 이 점을 떠올릴 것이다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://ui.toast.com/icons-afac2d19e8aa82377b3f18a704d4acf5/favicon-16x16.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://blog.rhostem.com/posts/2020-01-03-code-sharing-with-git-subtree" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://blog.rhostem.com/images/rhostem-profile.jpeg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Git subtree를 활용한 코드 공유</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">서비스를 개발하다 보면 코드를 공유해야 하는 일이 생긴다. 백엔드를 마이크로 서비스 구조로 개발하면 API 리스펀스, 각종 데이터 모델에 같은 타입을 사용해서 일관성을 유지해야 한다. 그리고 프론트엔드 웹을 데스크탑, 모바일로 분리해서 개발한다면 데이터 모델뿐만 아니…</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://blog.rhostem.com/icons/android-chrome-192x192.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&amp;mallGb=KOR&amp;barcode=9791165921132&amp;orderClick=LEa&amp;Kc=" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="http://image.kyobobook.co.kr/images/book/xlarge/132/x9791165921132.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">����Ʈ�� �����ϴ� �� ����Ʈ���� - ��������</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Svelte �����ӿ�ũ�� �̿��� �� ����Ʈ���� ���ʺ��� ���� SNS������Ʈ���� | ����Ʈ���� �� ���� Ʈ���带 �����ϴ� ������ �����ӿ�ũ, Svelte!
+����Ʈ���� 3���� React �� Vue �� Angular�� �ڸ��� �����Ѵ�
+
+����Ʈ�� Virtual DOM(���� ��)�� ��Ÿ�ӿ� �ε��� �����ӿ�ũ�� ����, ������ ���� �����ս� �ӵ��� �ڶ��ϴ� ... | ����Ʈ�� ������ ���, ���� ����Ʈ���� �����ӿ�ũ���� ������ �׸��� ����Ʈ�� ���� ������Ʈ�� ��� ���Ǵ��� �Ұ��Ѵ�. ����, ���� �鿣�� ������ �ִ� ȯ�濡�� ��Todo ���񽺡��� ��SNS ���񽺡��� ȿ�������� �����Ѵ�. �� �������� �ܼ��� �ϳ��� �����ӿ�ũ�� ...</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(http://image.kyobobook.co.kr/newimages/apps/b2c/kyobo.ICO)"></div>
+              <div class="flex nowrap...">KYOBOBOOK</div>
+            </div></div>
+        </a><a href="https://zustand-demo.pmnd.rs/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Zustand</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">🐻 Bear necessities for state management in React</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://zustand-demo.pmnd.rs/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://levelup.gitconnected.com/top-10-github-repos-every-developer-must-know-9da14292e284?source=email-e012841b24ec-1643822741278-digest.reader-5517fd7b58a6-9da14292e284----0-98------------------e9b3e403_0fb6_448f_be5f_ecb1123666d2-1-b18c570e_dbab_48c4_b0fb_dad7cf0519ce" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://miro.medium.com/max/1200/0*RIuporbn0_juKTpy">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Top 20+ Github Repos Every Developer Must Know</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">GitHub is a great place for sharing resources of all kinds, from free ebooks to APIs, from roadmaps to project ideas, and from projects to the products. I looked at Github and found the following…</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://miro.medium.com/fit/c/256/256/1*MMpkJtmeCME-6BmGNH5l8A.png)"></div>
+              <div class="flex nowrap...">Medium</div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 2월 3일 목요일
 </div>
     <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://developer-1px.github.io/teo-yu-frontend/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/23984/preview_image/rem.png">
           <div class="flex vbox p(16) gap(8)"><div class="bold">https://developer-1px.github.io/teo-yu-frontend/</div>
@@ -103,7 +219,7 @@
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer-1px.github.io/teo-yu-frontend/favicon.png)"></div>
               <div class="flex nowrap..."></div>
             </div></div>
-        </a><a href="https://github.com/developer-1px/teo-yu-frontend/issues" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/ebb2216808764fbee555cdd74f211415db801ba8a30fe40c594e04512d1d31cd/developer-1px/teo-yu-frontend">
+        </a><a href="https://github.com/developer-1px/teo-yu-frontend/issues" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/1835920ef9f9627cc9c5c835c5e9500b4e3efba82c42712bcd67bf00477e173c/developer-1px/teo-yu-frontend">
           <div class="flex vbox p(16) gap(8)"><div class="bold">Issues · developer-1px/teo-yu-frontend</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">x테오의 프론트엔드. Contribute to developer-1px/teo-yu-frontend development by creating an account on GitHub.</div></div>
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
@@ -159,9 +275,9 @@
     </div><div class="p(0/20) pt(60) bold">2022년 1월 31일 월요일
 </div>
     <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://www.youtube.com/watch?v=Y7PHBSqDfvE&amp;feature=youtu.be" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/Y7PHBSqDfvE/maxresdefault.jpg">
-          <div class="flex vbox p(16) gap(8)"><div class="bold">배워야 할까? 스벨트 10분 완벽 정리해드림.</div>
+          <div class="flex vbox p(16) gap(8)"><div class="bold">앞으로 대세는 스벨트? 10분 완벽 정리해드림.</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">개발자에게 완전 사랑받는 스벨트 그 비결은? 리액트와의 차이점은?실제로 어떻게 작동하는지? 누구나 배워도 되는것인지? 이 모든걸 몽땅 설명해드림!#Svelte #스벨트 #frontend #프론트엔드-0:55 스벨트가 리액트와 다른 점은?4:00 개발자들이 스벨트를 좋아하는 이유?4...</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a><a href="https://if.kakao.com/session/118" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://t1.kakaocdn.net/service_if_kakao_prod/images/img_sns2021.png">
@@ -219,7 +335,7 @@
         </a><a href="https://www.youtube.com/watch?v=2GhfkfcoFr4&amp;feature=youtu.be" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/2GhfkfcoFr4/hqdefault.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">크롬 개발자 도구 - 자바스크립트 디버거</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">크롬 개발자 도구의 자바스크립트 디버거를 이용하면 코드를 한줄 한줄 실행하면서 변수의 변화를 파악할 수 있습니다. 디버깅이나 코드 분석 할 때 사용하면 좋아요. 자바스크립트를 모르신다면 자바스크립트 입문수업을 먼저 보실 것을 권해드립니다. https://seomal.com/map/...</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a><a href="https://ko.javascript.info/string" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://ko.javascript.info/img/site_preview_en_1200x630.png">
@@ -237,7 +353,7 @@
         </a><a href="https://www.youtube.com/watch?v=QtOF0uMBy7k&amp;feature=youtu.be" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/QtOF0uMBy7k/hqdefault.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">JavaScript - Execute context</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">자바스크립트의 코드가 실행되는 원리인 execute context에 대한 수업입니다.이 수업을 들으면1. debugger의 고급 사용법을 익힐 수 있습니다.  2. 변수의 유효범위에 대해서 이해할 수 있습니다. 3. var, let, const의 차이점에 대해서 알 수 있습니다. ...</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a><a href="https://www.smashingmagazine.com/2022/01/devtools-updates-2022/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/e516aa85-3b77-418a-9b43-cec06943b129/devtools-updates-2022.jpg">
@@ -368,14 +484,14 @@
             </div></div>
         </a><a href="https://www.youtube.com/watch?v=9AUEfGZslmw" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/9AUEfGZslmw/maxresdefault.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">[LIVE] 시각적요소 테스트 자동화하기 :: 1월 우아한테크세미나</div>
-            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">발표자료 공유 신청링크 : https://forms.gle/ny9Yrq9fg1HcoYNXA클라이언트 개발자에게 테스트가 갖는 의미와 효용성은 무엇일까요?렌더링 결과물에 대한 시각적인 테스트 작성 방법을 실제 프로덕트에 적용한 사례와 함께 알아보며어떻게 동작하고 성과를 내고 있는지 ...</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">클라이언트 개발자에게 테스트가 갖는 의미와 효용성은 무엇일까요?렌더링 결과물에 대한 시각적인 테스트 작성 방법을 실제 프로덕트에 적용한 사례와 함께 알아보며어떻게 동작하고 성과를 내고 있는지 소개합니다.👍이런 분께 추천해요!- 배포 후 “여기 화면 깨졌어요“에 그만 철렁하고 싶은...</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a><a href="https://www.youtube.com/watch?v=L1dtkLeIz-M" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/L1dtkLeIz-M/maxresdefault.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">[A5] 프론트엔드에서 TDD가 가능하다는 것을 보여드립니다.</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">프론트엔드에서 TDD가 가능하다는 것을 보여드립니다.최수형 | Microprotect브라우저에서 오직 눈으로만 결과물을 확인하고 계신가요? 그것만으론 불안해서 테스트 코드를 작성해보려 했지만 어려움을 겪어 보셨다면 주목해주세요. React에서 테스트 가능한 코드 작성법을 알아보고 ...</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a><a href="https://docs.google.com/forms/d/e/1FAIpQLSci6hOvyzmxg7wp0aMQYEumM5adfZ0hbXSsoIAoBP68ezcZdw/viewform" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://lh3.googleusercontent.com/Q7mCimZAXZvwul2ULN7qjhXnJKyX3gB1ecUJgI6MMvC2VrHQhPS_Vp6O0xC_VXjz-6iCS5d5uL4=w1200-h630-p">
@@ -491,15 +607,21 @@ teo의 스프린트 2기 멤버들 입니다!
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://clovanote.naver.com/static/icons/icon-16x16.png)"></div>
               <div class="flex nowrap...">클로바노트</div>
             </div></div>
-        </a><a href="https://github.com/n-riesco/ijavascript" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/54a94c9f435d850e78047dade5bfb77df7728aac6d868f0587f6205240467199/n-riesco/ijavascript">
+        </a><a href="https://github.com/n-riesco/ijavascript" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/ba5a457e720d0f7aab16ffcb70a898921af6049e8a084d70af54d6d14aa661f5/n-riesco/ijavascript">
           <div class="flex vbox p(16) gap(8)"><div class="bold">GitHub - n-riesco/ijavascript: IJavascript is a javascript kernel for the Jupyter notebook</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">IJavascript is a javascript kernel for the Jupyter notebook - GitHub - n-riesco/ijavascript: IJavascript is a javascript kernel for the Jupyter notebook</div></div>
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
               <div class="flex nowrap...">GitHub</div>
             </div></div>
-        </a><a href="https://velog.io/@teo/google-sprint-2" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://images.velog.io/velog.png">
-          <div class="flex vbox p(16) gap(8)"><div class="bold">velog</div>
-            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">개발자들을 위한 블로그 서비스. 어디서 글 쓸지 고민하지 말고 벨로그에서 시작하세요.</div></div>
+        </a><a href="https://velog.io/@teo/google-sprint-2" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://media.vlpt.us/images/teo/post/be90c81a-8fd6-4e2b-a9ba-73aaa39dd696/테오의_구글_스프린트_2기%20(1).png?w=768">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">테오의 구글 스프린트 2기</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">이벤트를 한번 해볼까 합니다. 다같이 온라인으로 모여 1시간 정도 할 수 있는 것들로 생각해봅니다. 자유롭게 의견 주세요!
+
+압도적(?)인 표차이로 구글 스프린트가 1위로 당첨이 되었습니다. 2위는 스터디였답니다.
+
+프롤로그
+
+개발자들끼리 함께 하는 이벤트나 커뮤니티가</div></div>
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://static.velog.io/favicons/favicon-32x32.png)"></div>
               <div class="flex nowrap..."></div>
             </div></div>
@@ -652,7 +774,7 @@ teo의 스프린트 2기 멤버들 입니다!
             </div></div>
         </a><a href="https://www.npmjs.com/package/adorable-css" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://static.npmjs.com/338e4905a2684ca96e08c7780fc68412.png">
           <div class="flex vbox p(16) gap(8)"><div class="bold">adorable-css</div>
-            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Rapid On-Demand Atomic CSS generator. Latest version: 0.6.5, last published: 6 days ago. Start using adorable-css in your project by running `npm i adorable-css`. There are no other projects in the npm registry using adorable-css.</div></div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Rapid On-Demand Atomic CSS generator. Latest version: 0.6.6, last published: a day ago. Start using adorable-css in your project by running `npm i adorable-css`. There are no other projects in the npm registry using adorable-css.</div></div>
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png)"></div>
               <div class="flex nowrap...">npm</div>
             </div></div>
@@ -665,17 +787,17 @@ teo의 스프린트 2기 멤버들 입니다!
         </a>
     </div><div class="p(0/20) pt(60) bold">2022년 1월 25일 화요일
 </div>
-    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://tech.socarcorp.kr/design/2020/07/31/component-01.html" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://tech.socarcorp.kr/assets/authors/sandy.png">
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://tech.socarcorp.kr/design/2020/07/31/component-01.html" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://tech.socarcorp.kr/assets/images/component-01.png">
           <div class="flex vbox p(16) gap(8)"><div class="bold">[SOCAR FRAME 만들기 #3] 컴포넌트, 제대로 만들어 쉽게 쓰자! (1탄)</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">안녕하세요, 가디와 푸린에 이어 [SOCAR FRAME 만들기] 컴포넌트 편을 작성하게 된 쏘카 디자인팀 샌디(전수빈)입니다!</div></div>
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://tech.socarcorp.kr/assets/icon/favicon.ico)"></div>
-              <div class="flex nowrap..."></div>
+              <div class="flex nowrap...">SOCAR Tech Blog</div>
             </div></div>
-        </a><a href="https://tech.socarcorp.kr/design/2020/06/23/socar-design-system-01.html" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://tech.socarcorp.kr/assets/authors/gadi.jpeg">
+        </a><a href="https://tech.socarcorp.kr/design/2020/06/23/socar-design-system-01.html" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://tech.socarcorp.kr/assets/images/socar-design-system.png">
           <div class="flex vbox p(16) gap(8)"><div class="bold">[SOCAR FRAME 만들기 #1] 쏘카의 디자인 시스템 맛보기</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">안녕하세요, 쏘카 프로덕트 디자인팀의 가디입니다.</div></div>
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://tech.socarcorp.kr/assets/icon/favicon.ico)"></div>
-              <div class="flex nowrap..."></div>
+              <div class="flex nowrap...">SOCAR Tech Blog</div>
             </div></div>
         </a><a href="https://blog.banksalad.com/tech/banksalad-product-language-ios/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://blog.banksalad.com/static/d61181a4a33f2253e0e07176563d77d3/header.png">
           <div class="flex vbox p(16) gap(8)"><div class="bold">Banksalad Product Language를 소개합니다 | 뱅크샐러드</div>
@@ -746,7 +868,7 @@ Example, go to definit...</div></div>
         </a><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/8aGhZQkoFbQ/maxresdefault.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">What the heck is the event loop anyway? | Philip Roberts | JSConf EU</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">JavaScript programmers like to use words like, “event-loop”, “non-blocking”, “callback”, “asynchronous”, “single-threaded” and “concurrency”.We say things li...</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a><a href="https://velog.io/@ajy720/React-Typescript-IE11%EC%97%90%EC%84%9C-%EC%A7%80%EC%9B%90%ED%95%98%EA%B8%B0" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://images.velog.io/velog.png">
@@ -800,7 +922,7 @@ IE에서 리액트...</div></div>
         </a><a href="https://medium.com/geekculture/web-application-architecture-800d3ecd8019?source=email-e012841b24ec-1642872105330-digest.reader-9758482ba857-800d3ecd8019----3-101------------------a09c6053_1a29_477c_81f9_31612327a956-1-eedaf4a3_d861_425c_bbdf_dcb676c9db23" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://miro.medium.com/max/1200/1*MbtHljK_Y-HT_KwwYmaQVQ.png">
           <div class="flex vbox p(16) gap(8)"><div class="bold">Web Application Architecture</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Software architecture is highlights all the high-level components of a system and the interaction within them. Software design is a code level design focusing on distributing application business…</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://miro.medium.com/1*m-R_BkNf1Qjr1YbyOIJY2w.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://miro.medium.com/fit/c/152/152/1*sHhtYhaCe2Uc3IU0IgKwIQ.png)"></div>
               <div class="flex nowrap...">Medium</div>
             </div></div>
         </a>
@@ -845,7 +967,7 @@ function OnFocusOut()
     <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://www.youtube.com/watch?v=b7Uqx7NZpHw&amp;feature=youtu.be" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/b7Uqx7NZpHw/maxresdefault.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">[웹개발] [React] React 개발자라면 꼭 알아야하는 SWR</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">#React #SWR #Frontend #웹개발 #ajaxReact, swr, axios 를 사용해서 효율적인 ajax 요청 캐싱 및 optimistic response 를 구현하는 방법입니다.구독과 좋아요는 영상 제작에 큰 힘이 됩니다![블로그]코드팩토리 블로그에 오시면 더욱 많...</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a><a href="https://partnerjun.tistory.com/82" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FNUPOV%2FbtrqGTm9rWj%2FYoHdNUpEQn418lsEMgeDDK%2Fimg.png">
@@ -887,10 +1009,10 @@ function OnFocusOut()
         </a>
     </div><div class="p(0/20) pt(60) bold">2022년 1월 21일 금요일
 </div>
-    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://twitter.com/mdo/status/1483871584267866115" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://pbs.twimg.com/profile_images/1196263867178872832/BET9cPgr_normal.jpg">
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://twitter.com/mdo/status/1483871584267866115" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://pbs.twimg.com/profile_images/1196263867178872832/BET9cPgr_400x400.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">Mark Otto on Twitter</div>
-            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Hey friends—wanted to share something. On Dec 5, I had a massive heart attack that put me in the hospital for two weeks. The first week I was in a medically induced coma in the ICU, frozen Han Solo style to preserve my mind and body. No one knew if I’d still be me when I woke up.</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://abs.twimg.com/favicons/twitter.2.ico)"></div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">“Hey friends—wanted to share something. On Dec 5, I had a massive heart attack that put me in the hospital for two weeks. The first week I was in a medically induced coma in the ICU, frozen Han Solo style to preserve my mind and body. No one knew if I’d still be me when I woke up.”</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://abs.twimg.com/favicons/favicon.ico)"></div>
               <div class="flex nowrap...">Twitter</div>
             </div></div>
         </a><a href="https://tailwindui.com/preview" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://tailwindui.com/img/og-image.png">
@@ -911,12 +1033,12 @@ function OnFocusOut()
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://blog.banksalad.com/favicon-32x32.png?v=a0f8dfab85709bd32e8bfd56c885f0fe)"></div>
               <div class="flex nowrap..."></div>
             </div></div>
-        </a><a href="https://twitter.com/John_Grib/status/1483812633245790209?t=Iaz8PZw0YUBA-qg09XLmCw&amp;s=09" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://pbs.twimg.com/profile_images/1244148341669158912/K1jzDqew_normal.jpg">
+        </a><a href="https://twitter.com/John_Grib/status/1483812633245790209?t=Iaz8PZw0YUBA-qg09XLmCw&amp;s=09" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://pbs.twimg.com/media/FJePs3iaUAEg1-6.jpg:large">
           <div class="flex vbox p(16) gap(8)"><div class="bold">기계인간 John Grib on Twitter</div>
-            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">이 이야기는 저한테 이메일로 코딩테스트에 대해 환상을 갖고 조언을 요청하는 분들께 공통적으로 해드리는 말씀이기도 합니다.
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">“이 이야기는 저한테 이메일로 코딩테스트에 대해 환상을 갖고 조언을 요청하는 분들께 공통적으로 해드리는 말씀이기도 합니다.
 
-최근엔 지난 9월이 있었네요. https://t.co/joJ2pSZAwf</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://abs.twimg.com/favicons/twitter.2.ico)"></div>
+최근엔 지난 9월이 있었네요.”</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://abs.twimg.com/favicons/favicon.ico)"></div>
               <div class="flex nowrap...">Twitter</div>
             </div></div>
         </a><a href="https://m.moneys.mt.co.kr/article.html?no=2022012011038058372" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://menu.mt.co.kr/moneyweek/thumb/2022/01/20/06/2022012011038058372_1.jpg/dims/optimize/">
@@ -946,7 +1068,7 @@ function OnFocusOut()
         </a><a href="https://medium.com/xgeeks/clean-up-your-react-component-types-45acec85d4c3?source=email-e012841b24ec-1642612895955-digest.reader-a814a5f664d9-45acec85d4c3----1-58------------------5d3ba0be_847d_43ca_a3da_dabfee743d76-1-704a9479_2282_4dba_8e6e_3d8994eb8054" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://miro.medium.com/max/1200/1*37uSEBagqGGLf7m1CRNPxQ.png">
           <div class="flex vbox p(16) gap(8)"><div class="bold">Clean up your React component types 🧼</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Write cleaner components and leave React.FC behind once and for all</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://miro.medium.com/1*m-R_BkNf1Qjr1YbyOIJY2w.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://miro.medium.com/fit/c/152/152/1*sHhtYhaCe2Uc3IU0IgKwIQ.png)"></div>
               <div class="flex nowrap...">Medium</div>
             </div></div>
         </a>
@@ -982,7 +1104,7 @@ function OnFocusOut()
     <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://www.youtube.com/watch?v=Eim11QYLfEY&amp;feature=youtu.be" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/Eim11QYLfEY/hqdefault.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">CSS 핫🔥 트렌드 (어떤 라이브러리를 먼저 배우면 좋을까?)</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">2022년 CSS 트렌드 중점적으로 얘기해 봅니다. (↙ 자세한 내용)___________________________💡 풀스택 개발 로드맵 ⇢ https://academy.dream-coding.com/pages/912e50🚀 엘리와 더 체계적으로 배우고 싶다면 ⇢ 드림코딩 ...</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a><a href="https://news.xbox.com/en-us/2022/01/18/welcoming-activision-blizzard-to-microsoft-gaming/?ranMID=43674&amp;ranEAID=VU5Hb5DwDXE&amp;ranSiteID=VU5Hb5DwDXE-m_w7gYO3RXX1G1sRY2sbFg&amp;epi=VU5Hb5DwDXE-m_w7gYO3RXX1G1sRY2sbFg&amp;irgwc=1&amp;OCID=AID2200057_aff_7795_1243925&amp;tduid=%28ir__k6nxipeezgkf6x9p2gc2szotju2xob3lacdpoqxe00%29%287795%29%281243925%29%28VU5Hb5DwDXE-m_w7gYO3RXX1G1sRY2sbFg%29%28%29&amp;irclickid=_k6nxipeezgkf6x9p2gc2szotju2xob3lacdpoqxe00" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://news.xbox.com/en-us/wp-content/uploads/sites/2/2022/01/MicrosoftGaming118_1920x1080_v2.jpg">
@@ -1058,7 +1180,7 @@ function OnFocusOut()
             </div></div>
         </a><a href="https://www.npmjs.com/package/react-to-webcomponent" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://static.npmjs.com/338e4905a2684ca96e08c7780fc68412.png">
           <div class="flex vbox p(16) gap(8)"><div class="bold">react-to-webcomponent</div>
-            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Convert react components to native Web Components.. Latest version: 1.5.1, last published: a year ago. Start using react-to-webcomponent in your project by running `npm i react-to-webcomponent`. There are 62 other projects in the npm registry using react-to-webcomponent.</div></div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Convert react components to native Web Components.. Latest version: 1.5.1, last published: a year ago. Start using react-to-webcomponent in your project by running `npm i react-to-webcomponent`. There are 61 other projects in the npm registry using react-to-webcomponent.</div></div>
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png)"></div>
               <div class="flex nowrap...">npm</div>
             </div></div>
@@ -1074,7 +1196,7 @@ function OnFocusOut()
     <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://www.youtube.com/watch?v=EMOlLLTAZMs&amp;feature=youtu.be" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/EMOlLLTAZMs/maxresdefault.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">개발자 99%가 모르는 신박한 HTML 태그 5개!</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">아니 이런게 가능하다고? 알아두면 넘나 유용한. HTML 신박한 태그 5가지!-📌 니콜라스와 무료로 코딩 공부하기 https://bit.ly/3zZKXgs</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a><a href="https://zero-base.co.kr/category_dev_camp/JS_challenge?utm_source=facebook&amp;utm_medium=paid&amp;utm_campaign=JS_challenge_conv_all_dr&amp;utm_content=set3_ad5&amp;fbclid=IwAR3DQU96ZtFlt7W0o8xRBH6V1OVEh3xkHIvbLSbPvcnPxvY9gZa5ZoT6uUw" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202112/121254-584/자완정.png">
@@ -1083,7 +1205,7 @@ function OnFocusOut()
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://zero-base.co.kr/favicon.ico)"></div>
               <div class="flex nowrap..."></div>
             </div></div>
-        </a><a href="https://github.com/vbenjs/vue-vben-admin" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/baa53546e6fb45eb164c0830792afefa62e7e46789452837b56190b958a02ee8/vbenjs/vue-vben-admin">
+        </a><a href="https://github.com/vbenjs/vue-vben-admin" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/1f90073bdf2a12f7c0f173b045e7f942c0edca43abc043aeceec6c33ea1ca793/vbenjs/vue-vben-admin">
           <div class="flex vbox p(16) gap(8)"><div class="bold">GitHub - vbenjs/vue-vben-admin: A modern vue admin. It is based on Vue3, vite and TypeScript. It&#39;s fast！</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">A modern vue admin. It is based on Vue3, vite and TypeScript. It&#39;s fast！ - GitHub - vbenjs/vue-vben-admin: A modern vue admin. It is based on Vue3, vite and TypeScript. It&#39;s fast！</div></div>
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
@@ -1092,7 +1214,7 @@ function OnFocusOut()
         </a><a href="https://www.youtube.com/watch?app=desktop&amp;v=2KBHvaAWJOA" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/2KBHvaAWJOA/hqdefault.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">The New Vue by Evan You</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">In this session, Evan You talks about the new Vue 3 experience: from new syntax to new docs, build tools, devtools, and TS/IDE.Jobs -Abyat is looking to hire...</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a><a href="https://michalzalecki.com/micro-frontends-module-federation-monorepo/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://michalzalecki.com/static/5dbedadefe7416bc01dda7b51a3decea/8a184/alexander-andrews-Bvr1TxrLGfs-unsplash.jpg">
@@ -1131,7 +1253,7 @@ function OnFocusOut()
         </a><a href="https://www.youtube.com/watch?app=desktop&amp;v=DHjqpvDnNGE" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/DHjqpvDnNGE/maxresdefault.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">JavaScript in 100 Seconds</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">JavaScript is the the programming language that built the web. Learn how it evolved into a powerful tool for building websites, servers with Node.js, mobile ...</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a><a href="https://velog.io/@teo/css-history-1" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://media.vlpt.us/images/teo/post/460b29bb-8095-4a18-82b2-353f1aeee069/CSS_역사로_알아보는_nCSS가_어려워진_이유_🤔.png?w=768">
@@ -1196,7 +1318,7 @@ function OnFocusOut()
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://blog.naver.com/favicon.ico?3)"></div>
               <div class="flex nowrap..."></div>
             </div></div>
-        </a><a href="https://github.com/labs42io/clean-code-typescript" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/7b0f4e4297edcd0fd048ca4d69d853ec79f75a563dc24263bb7e2384e1846591/labs42io/clean-code-typescript">
+        </a><a href="https://github.com/labs42io/clean-code-typescript" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/717381fa03a3d12dae06ed016fc0287582c27167a12b6e4c4ca0486771e03be3/labs42io/clean-code-typescript">
           <div class="flex vbox p(16) gap(8)"><div class="bold">GitHub - labs42io/clean-code-typescript: Clean Code concepts adapted for TypeScript</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Clean Code concepts adapted for TypeScript. Contribute to labs42io/clean-code-typescript development by creating an account on GitHub.</div></div>
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
@@ -1272,7 +1394,7 @@ See also &lt;a href=&quot;http://blog.schema.org/2014/04/announcing-schemaorg-ac
 </div>
     <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://www.npmjs.com/package/notadb" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://static.npmjs.com/338e4905a2684ca96e08c7780fc68412.png">
           <div class="flex vbox p(16) gap(8)"><div class="bold">notadb</div>
-            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">this is not a database. Latest version: 0.0.13, last published: 23 days ago. Start using notadb in your project by running `npm i notadb`. There are no other projects in the npm registry using notadb.</div></div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">this is not a database. Latest version: 0.0.13, last published: 24 days ago. Start using notadb in your project by running `npm i notadb`. There are no other projects in the npm registry using notadb.</div></div>
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png)"></div>
               <div class="flex nowrap...">npm</div>
             </div></div>
@@ -1313,7 +1435,7 @@ See also &lt;a href=&quot;http://blog.schema.org/2014/04/announcing-schemaorg-ac
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://static.velog.io/favicons/favicon-32x32.png)"></div>
               <div class="flex nowrap..."></div>
             </div></div>
-        </a><a href="https://github.com/cplusplus/draft/blob/main/papers/n4713.pdf" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/8454215f96286c3cb17a47556ae867c93fc7b6a6400a0112b434f88bdcc0bb6a/cplusplus/draft">
+        </a><a href="https://github.com/cplusplus/draft/blob/main/papers/n4713.pdf" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/a3b9906e59c03eed8009953a6e9ecb1b8ce5cdccb542c5da2c810c513fc94d71/cplusplus/draft">
           <div class="flex vbox p(16) gap(8)"><div class="bold">draft/n4713.pdf at main · cplusplus/draft</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">C++ standards drafts. Contribute to cplusplus/draft development by creating an account on GitHub.</div></div>
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
@@ -1328,7 +1450,7 @@ See also &lt;a href=&quot;http://blog.schema.org/2014/04/announcing-schemaorg-ac
         </a><a href="https://citeseerx.ist.psu.edu/myciteseer/login" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://citeseerx.ist.psu.edu/images/csx_logo_front.png">
           <div class="flex vbox p(16) gap(8)"><div class="bold">CiteSeerX</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://citeseerx.ist.psu.edu/favicon.ico;jsessionid=8DEBC30AD811852412007E123A161C2E)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://citeseerx.ist.psu.edu/favicon.ico;jsessionid=D24A05C0388C52FD714D56FB3438DF09)"></div>
               <div class="flex nowrap..."></div>
             </div></div>
         </a><a href="https://zest-cheddar-2c4.notion.site/7ba4db39a94b40fbb082bc32c66d0811" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
@@ -1352,7 +1474,7 @@ See also &lt;a href=&quot;http://blog.schema.org/2014/04/announcing-schemaorg-ac
         </a><a href="https://www.youtube.com/watch?v=caTP-P4LpLk&amp;feature=youtu.be" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/caTP-P4LpLk/maxresdefault.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">🇺🇸구글 전무가 말하는 실리콘밸리 기업문화와 복지</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">오늘은 구글 전무 미키김 2탄!실리콘밸리의 기업문화와 은밀한 비밀(?)에 대해 알아보았습니다.실리콘밸리에서 후드티만 입는이유는 무엇일까요?배우는 즐거움이 있는 본격 취미 탐구 라이프 채널!조승연의 탐구생활 🕵🏻‍♂️미키김 insta. @mickey.kiminsta. @total...</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a><a href="https://ui.toast.com/weekly-pick/ko_20220106/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://uicdn.toast.com/toastui/img/og-image.png">
@@ -1379,7 +1501,7 @@ See also &lt;a href=&quot;http://blog.schema.org/2014/04/announcing-schemaorg-ac
     <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://www.youtube.com/watch?v=caTP-P4LpLk&amp;feature=youtu.be" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/caTP-P4LpLk/maxresdefault.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">🇺🇸구글 전무가 말하는 실리콘밸리 기업문화와 복지</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">오늘은 구글 전무 미키김 2탄!실리콘밸리의 기업문화와 은밀한 비밀(?)에 대해 알아보았습니다.실리콘밸리에서 후드티만 입는이유는 무엇일까요?배우는 즐거움이 있는 본격 취미 탐구 라이프 채널!조승연의 탐구생활 🕵🏻‍♂️미키김 insta. @mickey.kiminsta. @total...</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a><a href="https://developer.mozilla.org/ko/docs/Web/API/Element/insertAdjacentHTML" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.0ca9dbda.png">
@@ -1388,7 +1510,7 @@ See also &lt;a href=&quot;http://blog.schema.org/2014/04/announcing-schemaorg-ac
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.97046865.png)"></div>
               <div class="flex nowrap..."></div>
             </div></div>
-        </a><a href="https://github.com/carloscuesta/gitmoji/commits/master" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/67901bc45afa0e2c92217cd286683d5d5040590af56e4c996dce5e3e2d446f13/carloscuesta/gitmoji">
+        </a><a href="https://github.com/carloscuesta/gitmoji/commits/master" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/6f656b0918d799e13b7408281417665d6ff3ce99dbbcdfa507e99ab89f51aad6/carloscuesta/gitmoji">
           <div class="flex vbox p(16) gap(8)"><div class="bold">Commits · carloscuesta/gitmoji</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">An emoji guide for your commit messages. 😜 . Contribute to carloscuesta/gitmoji development by creating an account on GitHub.</div></div>
             <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
@@ -1418,7 +1540,7 @@ See also &lt;a href=&quot;http://blog.schema.org/2014/04/announcing-schemaorg-ac
         </a><a href="https://www.youtube.com/watch?v=7mkQi0TlJQo" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/7mkQi0TlJQo/hqdefault.jpg">
           <div class="flex vbox p(16) gap(8)"><div class="bold">완전 새로운 리액트가 온다? 핵심정리 10분컷.</div>
             <div class="flex c(#999) font(13)"><div class="line-clamp(5)">리액트 18은 무엇이 달라지는지 10분동안 분석해드림. 찐 혁신의 시작. 리액트 18이 온다!#리액트 #리액트18 #react18 #코딩 #프로그래밍-📌 니콜라스와 무료로 React 시작하기 https://bit.ly/31y15Ji</div></div>
-            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/13291395/img/favicon_32x32.png)"></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/29944424/img/favicon_32x32.png)"></div>
               <div class="flex nowrap...">YouTube</div>
             </div></div>
         </a>
