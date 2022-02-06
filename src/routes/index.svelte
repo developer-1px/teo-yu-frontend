@@ -1,6 +1,6 @@
 <script lang="ts">
 import data1 from "../../opentalk/Talk_2022.2.1 16:35-1.txt.json"
-import data2 from "../../opentalk/Talk_2022.2.1 16:35-2.txt.json"
+import data2 from "../../opentalk/Talk-2.txt.json"
 const data = [...data1, ...data2].reverse()
 
 const byDay = []

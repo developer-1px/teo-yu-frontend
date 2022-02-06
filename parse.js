@@ -123,7 +123,7 @@ const gerPreview = (link) => {
 }
 
 const run = async () => {
-  const fileName = "/opentalk/Talk_2022.2.1 16:35-1.txt"
+  const fileName = "/opentalk/Talk-2.txt"
   const data = await fs.readFile(__dirname + fileName, "utf8")
 
   console.log(data)

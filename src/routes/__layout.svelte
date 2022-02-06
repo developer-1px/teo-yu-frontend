@@ -25,7 +25,7 @@ $: if (scrollY >= 0) {
   <a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="{base}/" use:useActive>#Link</a>
   <a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="{base}/talk" use:useActive>#Talk</a>
   <div class="flex"></div>
-  <div class="w(32) h(32) r(100%) clip cover" style="background-image:url(https://avatars.githubusercontent.com/u/66650330?s=400&u=f7e0583060061b825231e6aa0e23bcca76dc31c6&v=4)"></div>
+  <a href="https://github.com/developer-1px/teo-yu-frontend" target="_blank" class="w(32) h(32) r(100%) clip cover" style="background-image:url(https://avatars.githubusercontent.com/u/66650330?s=400&u=f7e0583060061b825231e6aa0e23bcca76dc31c6&v=4)"></a>
 </div>
 
 <div class:isUp>

@@ -1,9 +1,9 @@
 <script lang="ts">
 import data1 from "../../opentalk/Talk_2022.2.1 16:35-1.txt.json"
-import data2 from "../../opentalk/Talk_2022.2.1 16:35-2.txt.json"
+import data2 from "../../opentalk/Talk-2.txt.json"
 
 const data = [...data1, ...data2]
-const dates = data.filter(t => t.type === "(날짜)")
+const dates = data.filter(t => t.type === "(날짜)").reverse()
 </script>
 
 <div class="flex bg(#fff) hbox gap(10) p(20) scroll-x font(10) .isUp:fixed top(70) w(100%)">
