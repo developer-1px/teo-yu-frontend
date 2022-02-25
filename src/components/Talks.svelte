@@ -1,12 +1,9 @@
 <script lang="ts">
-import data1 from "../../opentalk/Talk_2022.2.1 16:35-1.txt.json"
-import data2 from "../../opentalk/Talk-2.txt.json"
-
-const data = [...data1, ...data2]
+export let data = []
 const dates = data.filter(t => t.type === "(날짜)").reverse()
 </script>
 
-<div class="flex bg(#fff) hbox gap(10) p(20) scroll-x font(10) .isUp:fixed top(70) w(100%)">
+<div class="flex bg(#fff) hbox gap(10) p(20) scroll-x font(10) fixed top(60) w(100%) none .isUp:hbox!">
   {#each dates as date}
     <a href={'#'+date.value.trim()} class="r(100) bg(#f1f1f1) pointer p(10)">{date.value}</a>
   {/each}
@@ -61,6 +58,3 @@ const dates = data.filter(t => t.type === "(날짜)").reverse()
     {/each}
   </div>
 </div>
-
-<style global>
-</style>
