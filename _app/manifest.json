@@ -1,26 +1,31 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-aa367934.js",
+    "file": "start-d4d8a1fb.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-427a5d82.js",
+      "_vendor-8be5a3dd.js",
       "_paths-4b3c6e7e.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
       "src/routes/index.svelte",
-      "src/routes/talk.svelte"
+      "src/routes/link1.svelte",
+      "src/routes/link2.svelte",
+      "src/routes/link3.svelte",
+      "src/routes/talk1.svelte",
+      "src/routes/talk2.svelte",
+      "src/routes/talk3.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-08f3cfb9.js",
+    "file": "pages/__layout.svelte-e0599cbe.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-427a5d82.js",
+      "_vendor-8be5a3dd.js",
       "_paths-4b3c6e7e.js"
     ],
     "css": [
@@ -28,44 +33,119 @@
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-432ccb39.js",
+    "file": "error.svelte-0a4ada5c.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-427a5d82.js"
+      "_vendor-8be5a3dd.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-1e9e5ea7.js",
+    "file": "pages/index.svelte-e299d338.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-427a5d82.js",
-      "_Talk-2.txt-c5c2064b.js"
-    ],
-    "css": [
-      "assets/pages/index.svelte-aaecba9f.css"
+      "_vendor-8be5a3dd.js",
+      "_Talks-4a6e6ae6.js",
+      "_Talk-3.txt-fdd5d627.js"
     ]
   },
-  "src/routes/talk.svelte": {
-    "file": "pages/talk.svelte-460d971d.js",
-    "src": "src/routes/talk.svelte",
+  "src/routes/link1.svelte": {
+    "file": "pages/link1.svelte-2b09f1bf.js",
+    "src": "src/routes/link1.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-427a5d82.js",
-      "_Talk-2.txt-c5c2064b.js"
+      "_vendor-8be5a3dd.js",
+      "_Links-f95f27ba.js",
+      "_Talk-1.txt-e039f34e.js"
     ]
   },
-  "_vendor-427a5d82.js": {
-    "file": "chunks/vendor-427a5d82.js"
+  "src/routes/link2.svelte": {
+    "file": "pages/link2.svelte-bf4286a5.js",
+    "src": "src/routes/link2.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8be5a3dd.js",
+      "_Links-f95f27ba.js",
+      "_Talk-2.txt-d55b62be.js"
+    ]
+  },
+  "src/routes/link3.svelte": {
+    "file": "pages/link3.svelte-64ed7045.js",
+    "src": "src/routes/link3.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8be5a3dd.js",
+      "_Links-f95f27ba.js",
+      "_Talk-3.txt-fdd5d627.js"
+    ]
+  },
+  "src/routes/talk1.svelte": {
+    "file": "pages/talk1.svelte-303084b8.js",
+    "src": "src/routes/talk1.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8be5a3dd.js",
+      "_Talks-4a6e6ae6.js",
+      "_Talk-1.txt-e039f34e.js"
+    ]
+  },
+  "src/routes/talk2.svelte": {
+    "file": "pages/talk2.svelte-93fce4d2.js",
+    "src": "src/routes/talk2.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8be5a3dd.js",
+      "_Talks-4a6e6ae6.js",
+      "_Talk-2.txt-d55b62be.js"
+    ]
+  },
+  "src/routes/talk3.svelte": {
+    "file": "pages/talk3.svelte-46bac6ee.js",
+    "src": "src/routes/talk3.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8be5a3dd.js",
+      "_Talks-4a6e6ae6.js",
+      "_Talk-3.txt-fdd5d627.js"
+    ]
+  },
+  "_vendor-8be5a3dd.js": {
+    "file": "chunks/vendor-8be5a3dd.js"
   },
   "_paths-4b3c6e7e.js": {
     "file": "chunks/paths-4b3c6e7e.js"
   },
-  "_Talk-2.txt-c5c2064b.js": {
-    "file": "chunks/Talk-2.txt-c5c2064b.js"
+  "_Talks-4a6e6ae6.js": {
+    "file": "chunks/Talks-4a6e6ae6.js",
+    "imports": [
+      "_vendor-8be5a3dd.js"
+    ]
+  },
+  "_Talk-3.txt-fdd5d627.js": {
+    "file": "chunks/Talk-3.txt-fdd5d627.js"
+  },
+  "_Links-f95f27ba.js": {
+    "file": "chunks/Links-f95f27ba.js",
+    "imports": [
+      "_vendor-8be5a3dd.js"
+    ],
+    "css": [
+      "assets/Links-b93c1af4.css"
+    ]
+  },
+  "_Talk-1.txt-e039f34e.js": {
+    "file": "chunks/Talk-1.txt-e039f34e.js"
+  },
+  "_Talk-2.txt-d55b62be.js": {
+    "file": "chunks/Talk-2.txt-d55b62be.js"
   }
 }
