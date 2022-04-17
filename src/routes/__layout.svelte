@@ -20,11 +20,14 @@ $: if (scrollY >= 0) {
 }
 </script>
 
+
 <div class="hbox font(20) p(20) gap(20) bold fixed top(0) bg(#fff) z(99999) w(100%) h(60) none .isUp:hbox!" class:isUp>
   <div>테오의 프론트엔드</div>
-  <a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="{base}/" use:useActive>#Talk3</a>
+  <a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="{base}/" use:useActive>#Talk4</a>
+  <a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="{base}/talk3" use:useActive>#Talk3</a>
   <a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="{base}/talk2" use:useActive>#Talk2</a>
   <a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="{base}/talk1" use:useActive>#Talk1</a>
+  <a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="{base}/link4" use:useActive>#Link4</a>
   <a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="{base}/link3" use:useActive>#Link3</a>
   <a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="{base}/link2" use:useActive>#Link2</a>
   <a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="{base}/link1" use:useActive>#Link1</a>
