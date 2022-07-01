@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-5b7a9672.js",
+    "file": "start-4fd51852.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -15,14 +15,17 @@
       "src/routes/link2.svelte",
       "src/routes/link3.svelte",
       "src/routes/link4.svelte",
+      "src/routes/link5.svelte",
+      "src/routes/link6.svelte",
       "src/routes/talk1.svelte",
       "src/routes/talk2.svelte",
       "src/routes/talk3.svelte",
-      "src/routes/talk4.svelte"
+      "src/routes/talk4.svelte",
+      "src/routes/talk5.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-394b501b.js",
+    "file": "pages/__layout.svelte-fe35f29e.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -44,14 +47,14 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-d6ae1b7f.js",
+    "file": "pages/index.svelte-1e496f3d.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-8be5a3dd.js",
       "_Talks-6c340fb0.js",
-      "_Talk-4.txt-6dbd8757.js"
+      "_Talk-6.txt-4555b4fa.js"
     ]
   },
   "src/routes/link1.svelte": {
@@ -88,14 +91,36 @@
     ]
   },
   "src/routes/link4.svelte": {
-    "file": "pages/link4.svelte-bdf6bf04.js",
+    "file": "pages/link4.svelte-30e5283d.js",
     "src": "src/routes/link4.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-8be5a3dd.js",
       "_Links-9dc395d7.js",
-      "_Talk-4.txt-6dbd8757.js"
+      "_Talk-4.txt-3449acfb.js"
+    ]
+  },
+  "src/routes/link5.svelte": {
+    "file": "pages/link5.svelte-34de1a58.js",
+    "src": "src/routes/link5.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8be5a3dd.js",
+      "_Links-9dc395d7.js",
+      "_Talk-5.txt-a2250163.js"
+    ]
+  },
+  "src/routes/link6.svelte": {
+    "file": "pages/link6.svelte-67c613d6.js",
+    "src": "src/routes/link6.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8be5a3dd.js",
+      "_Links-9dc395d7.js",
+      "_Talk-6.txt-4555b4fa.js"
     ]
   },
   "src/routes/talk1.svelte": {
@@ -132,14 +157,25 @@
     ]
   },
   "src/routes/talk4.svelte": {
-    "file": "pages/talk4.svelte-a4ca946a.js",
+    "file": "pages/talk4.svelte-70794432.js",
     "src": "src/routes/talk4.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-8be5a3dd.js",
       "_Talks-6c340fb0.js",
-      "_Talk-4.txt-6dbd8757.js"
+      "_Talk-4.txt-3449acfb.js"
+    ]
+  },
+  "src/routes/talk5.svelte": {
+    "file": "pages/talk5.svelte-5d42dd63.js",
+    "src": "src/routes/talk5.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8be5a3dd.js",
+      "_Talks-6c340fb0.js",
+      "_Talk-5.txt-a2250163.js"
     ]
   },
   "_vendor-8be5a3dd.js": {
@@ -154,8 +190,8 @@
       "_vendor-8be5a3dd.js"
     ]
   },
-  "_Talk-4.txt-6dbd8757.js": {
-    "file": "chunks/Talk-4.txt-6dbd8757.js"
+  "_Talk-6.txt-4555b4fa.js": {
+    "file": "chunks/Talk-6.txt-4555b4fa.js"
   },
   "_Links-9dc395d7.js": {
     "file": "chunks/Links-9dc395d7.js",
@@ -174,5 +210,11 @@
   },
   "_Talk-3.txt-442fc8da.js": {
     "file": "chunks/Talk-3.txt-442fc8da.js"
+  },
+  "_Talk-4.txt-3449acfb.js": {
+    "file": "chunks/Talk-4.txt-3449acfb.js"
+  },
+  "_Talk-5.txt-a2250163.js": {
+    "file": "chunks/Talk-5.txt-a2250163.js"
   }
 }
