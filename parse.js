@@ -5,13 +5,7 @@ import {getLinkPreview} from "link-preview-js"
 const __dirname = path.resolve()
 
 /// Tokenizer
-const lex = [
-  ["(날짜)", /(\d{4}년 \d{1,2}월 \d{1,2}일 .요일\s*)/],
-  ["(작성일자)", /(\d{4}\. \d{1,2}\. \d{1,2}\. (?:오전|오후) \d{1,2}:\d{1,2})/],
-  ["(operator)", /([,:] )/],
-  ["(url)", /((?:http|https):\/\/(?:\w+:{0,1}\w*@)?\S+(?::[0-9]+)?(?:\/|\/[\w#!:.?+=&%@!\-\/])?)/],
-  ["(unknown)", /(\s|.)/]
-]
+const lex = [["(날짜)", /(\d{4}년 \d{1,2}월 \d{1,2}일 .요일\s*)/], ["(작성일자)", /(\d{4}\. \d{1,2}\. \d{1,2}\. (?:오전|오후) \d{1,2}:\d{1,2})/], ["(operator)", /([,:] )/], ["(url)", /((?:http|https):\/\/(?:\w+:{0,1}\w*@)?\S+(?::[0-9]+)?(?:\/|\/[\w#!:.?+=&%@!\-\/])?)/], ["(unknown)", /(\s|.)/]]
 
 const regex = new RegExp(lex.map(v => v[1].source).join("|"), "g")
 
@@ -63,8 +57,6 @@ const encodedStr = (rawStr) => rawStr.replace(/[\u00A0-\u9999<>\&]/g, function(i
 
 const parse = (data) => {
   tokenize(data)
-
-  console.log(tokens)
 
   const stmt = []
   const push = (v) => stmt.push(v)
@@ -118,29 +110,22 @@ const parse = (data) => {
   return stmt
 }
 
-const gerPreview = (link) => {
-  return getLinkPreview(link, {headers: {"user-agent": "Twitterbot/1.0"}})
+const getPreview = (link) => {
+  return getLinkPreview(link, {
+    headers: {"user-agent": "Twitterbot/1.0"}, timeout: 5 * 1000
+  })
 }
 
 const run = async () => {
-  const fileName = "/opentalk/Talk-4.txt"
+  const fileName = "/opentalk/Talk-5.txt"
   const data = await fs.readFile(__dirname + fileName, "utf8")
-
-  console.log(data)
-
   const ret = parse(data)
-
-  console.log(ret)
 
   const r = ret.map(async value => {
     if (!value.link) return value
     return {
-      ...value, ogs: await Promise.all(value.link.map(link => gerPreview(link)
-        .then(data => data.title === "Just a moment..." ? gerPreview(link) : data, e => gerPreview(link))
-        .then(data => data.title === "Just a moment..." ? gerPreview(link) : data, e => gerPreview(link))
-        .then(data => data.title === "Just a moment..." ? gerPreview(link) : data, e => gerPreview(link))
-        .then(data => data.title === "Just a moment..." ? gerPreview(link) : data, e => gerPreview(link))
-        .then(data => data.title === "Just a moment..." ? gerPreview(link) : data, e => gerPreview(link))
+      ...value, ogs: await Promise.all(value.link.map(link => getPreview(link)
+        // .then(data => data.title === "Just a moment..." ? getPreview(link) : data, e => getPreview(link))
         .catch(e => ({url: link}))))
     }
   })
@@ -150,6 +135,8 @@ const run = async () => {
   console.log(res)
 
   await fs.writeFile(__dirname + fileName + ".json", res)
+
+  console.log("done!!")
 }
 
 run()

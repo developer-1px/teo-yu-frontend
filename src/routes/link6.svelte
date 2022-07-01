@@ -1,6 +1,6 @@
 <script>
-import Talks from "../components/Talks.svelte"
+import Links from "../components/Links.svelte"
 import data from "../../opentalk/Talk-6.txt.json"
 </script>
 
-<Talks {data}/>
+<Links {data}/>
