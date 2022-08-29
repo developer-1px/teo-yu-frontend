@@ -1,6 +1,5 @@
 import adapter from "@sveltejs/adapter-static"
 import preprocess from "svelte-preprocess"
-import {adorableCSS} from "adorable-css/vite-plugin-adorable-css"
 
 /** @type {import("@sveltejs/kit").Config} */
 const config = {
@@ -10,12 +9,8 @@ const config = {
 
   kit: {
     adapter: adapter(),
-
-    // hydrate the <div id="svelte"> element in src/app.html
-    target: "#svelte",
-    vite: {
-      server:{fs: {strict:false}},
-      plugins: [adorableCSS()],
+    prerender: {
+      default: true
     }
   }
 }

@@ -5,14 +5,14 @@ const hashCode = s => s.split('').reduce((a,b) => (((a << 5) - a) + b.charCodeAt
 const nickToColor = (nickname) => Math.abs(hashCode(nickname) % 360)
 </script>
 
-<div class="flex bg(#fff) hbox gap(10) p(20) scroll-x font(10) fixed top(60) w(100%) none .isUp:hbox!">
+<div class="flex bg(--bg) hbox gap(10) p(20) scroll-x font(10) fixed top(60) w(100%) .isDown:none">
   {#each dates as date}
-    <a href={'#'+date.value.trim()} class="r(100) bg(#f1f1f1) pointer p(10)">{date.value}</a>
+    <a href={'#'+date.value.trim()} class="r(100) bg(#fff) pointer p(10)">{date.value}</a>
   {/each}
 </div>
 
 <div class="hbox(top+center) m(auto)">
-  <div class="w(800) w(~100%) p(10)">
+  <div class="w(600) w(~100%) p(10)">
     {#each data as row, index}
       {#if row.type === "(날짜)"}
         <div id={row.value.trim()} class="p(20/0) font(24) bold pt(100)">{row.value}</div>
@@ -22,7 +22,7 @@ const nickToColor = (nickname) => Math.abs(hashCode(nickname) % 360)
         <div class="hbox(top) gap(10) mt(8)">
           <div class="flex pl(40)">
             <div class="hbox(bottom) gap(4)">
-              <p class="p(12/16) font(14) bg(#f1f1f1) r(10) pre w(~100%-50px) >>a:color(#4f80ff) >>a:hover:underline">{@html row.text}</p>
+              <p class="p(10/14) font(14) bg(#fff) r(10) pre w(~100%-50px) >>a:color(#4f80ff) >>a:hover:underline">{@html row.text}</p>
               <div class="font(10) c(#888)">{row.created_at?.[1]}</div>
             </div>
           </div>
@@ -36,7 +36,7 @@ const nickToColor = (nickname) => Math.abs(hashCode(nickname) % 360)
           <div class="flex">
             <div class="font(11)">{row.nickname}</div>
             <div class="hbox(bottom) gap(4)">
-              <p class="p(12/16) font(14) bg(#f1f1f1) r(10) rtl(0) pre w(~100%-50px) >>a:color(#4f80ff) >>a:hover:underline">{@html row.text}</p>
+              <p class="p(8/12) font(14) bg(#fff) b(#eee) r(10) rtl(0) pre w(~100%-50px) >>a:color(#4f80ff) >>a:hover:underline">{@html row.text}</p>
               <div class="font(10) c(#888)">{row.created_at?.[1]}</div>
             </div>
           </div>
@@ -51,8 +51,8 @@ const nickToColor = (nickname) => Math.abs(hashCode(nickname) % 360)
                 <img class="cover" src={img} on:error={e => e.target.style.display='none'}/>
               {/each}
               <div class="p(16)">
-                <div class="font(14) bold">{title || url}</div>
-                <div class="c(#999) font(12)">
+                <div class="font(14) 600 c(#000)">{title || url}</div>
+                <div class="font(12) c(#999)">
                   <div>{description || ''}</div>
                 </div>
               </div>

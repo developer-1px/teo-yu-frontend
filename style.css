@@ -1,1 +1,5 @@
+:root {
+  --bg:#f3f3f3
+}
+html {background:var(--bg)}
 body { font-family:Pretendard, system-ui, sans-serif; }
