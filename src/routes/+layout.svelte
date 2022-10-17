@@ -4,7 +4,7 @@ import "../../style.css"
 import {base} from "$app/paths"
 import {page} from "$app/stores"
 
-const indexs = Array(10).fill(0).map((_, index) => index + 1).reverse()
+const indexs = Array(14).fill(0).map((_, index) => index + 1).reverse()
 
 const useActive = (el) => {
   page.subscribe(page => {

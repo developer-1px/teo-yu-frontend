@@ -117,7 +117,7 @@ const getPreview = (link) => {
 }
 
 const run = async () => {
-  const fileName = "/opentalk/Talk-5.txt"
+  const fileName = "/opentalk/Talk-14.txt"
   const data = await fs.readFile(__dirname + fileName, "utf8")
   const ret = parse(data)
 
