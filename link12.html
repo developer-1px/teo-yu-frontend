@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="description" content=""/>
+  <link rel="icon" href="/teo-yu-frontend/favicon.png"/>
+  <title>테오의 프론트엔드</title>
+  <meta name="description" content="테오의 프론트엔드 오픈 채팅 지난 글 지난 링크 다시보기"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta property="og:image" content="https://images.velog.io/images/teo/post/e4f74b64-f543-4589-b8bf-03a9fef2686b/%E1%84%90%E1%85%A6%E1%84%8B%E1%85%A9%E1%84%8B%E1%85%B4_%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%86%AB%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A6%E1%86%AB%E1%84%83%E1%85%B3.png"/>
+  <meta property="og:site_name" content="테오의 프론트엔드"/>
+  <meta property="og:type" content="object"/>
+  <meta property="og:title" content="테오의 프론트엔드"/>
+  <meta property="og:description" content="테오의 프론트엔드 오픈 채팅 지난 글 지난 링크 다시보기"/>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"/>
+  <meta http-equiv="content-security-policy" content="">
+	<link href="/teo-yu-frontend/_app/immutable/assets/+layout-11550ce5.css" rel="stylesheet">
+	<link href="/teo-yu-frontend/_app/immutable/assets/Links-1aefaaf6.css" rel="stylesheet">
+	<link rel="modulepreload" href="/teo-yu-frontend/_app/immutable/start-341e1fee.js">
+	<link rel="modulepreload" href="/teo-yu-frontend/_app/immutable/chunks/index-85968280.js">
+	<link rel="modulepreload" href="/teo-yu-frontend/_app/immutable/chunks/singletons-101b36ca.js">
+	<link rel="modulepreload" href="/teo-yu-frontend/_app/immutable/components/pages/_layout.svelte-f89ebf32.js">
+	<link rel="modulepreload" href="/teo-yu-frontend/_app/immutable/chunks/stores-eb984ca3.js">
+	<link rel="modulepreload" href="/teo-yu-frontend/_app/immutable/components/pages/link12/_page.svelte-87c36d3c.js">
+	<link rel="modulepreload" href="/teo-yu-frontend/_app/immutable/chunks/Links-42e38f0b.js">
+	<link rel="modulepreload" href="/teo-yu-frontend/_app/immutable/chunks/Talk-12.txt-17061372.js">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6800GS1SG"></script>
+  <script>
+  window.dataLayer = window.dataLayer || []
+
+  function gtag() {dataLayer.push(arguments)}
+
+  gtag("js", new Date())
+
+  gtag("config", "G-D6800GS1SG")
+  </script>
+</head>
+<body>
+<div id="svelte">
+
+
+<div class="hbox font(14) 300 p(20) gap(20) fixed top(0) bg(--bg) z(99999) w(100%) h(60) .isDown:none scroll-x"><div class="font(16) bold">테오의 프론트엔드</div>
+  <a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk14">#Talk14</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk13">#Talk13</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk12">#Talk12</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk11">#Talk11</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk10">#Talk10</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk9">#Talk9</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk8">#Talk8</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk7">#Talk7</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk6">#Talk6</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk5">#Talk5</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk4">#Talk4</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk3">#Talk3</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk2">#Talk2</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/talk1">#Talk1</a>
+  <a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link14">#Link14</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link13">#Link13</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link12">#Link12</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link11">#Link11</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link10">#Link10</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link9">#Link9</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link8">#Link8</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link7">#Link7</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link6">#Link6</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link5">#Link5</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link4">#Link4</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link3">#Link3</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link2">#Link2</a><a class="hover:underline pointer .active:bb(4px/hsl(100,75%,75%))" href="/teo-yu-frontend/link1">#Link1</a>
+  <div class="flex"></div>
+  <a href="https://github.com/developer-1px/teo-yu-frontend" target="_blank" class="w(32) h(32) r(100%) clip cover" style="background-image:url(https://avatars.githubusercontent.com/u/66650330?s=400&u=f7e0583060061b825231e6aa0e23bcca76dc31c6&v=4)"></a></div>
+
+<div class="h(60)"></div>
+
+<div><div class="p(0/20) pt(60) bold">2022년 10월 4일 화요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://blog.maximeheckel.com/posts/react-sub-components-513f6679abed/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://blog.maximeheckel.com/posts/react-sub-components-513f6679abed/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://youtu.be/x2eF3YLiNhY" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://youtu.be/x2eF3YLiNhY</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 10월 3일 월요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://nextjs.org/conf/tickets/oct22/hhhminme" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://nextjs.org/conf/tickets/oct22/hhhminme</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.jobplanet.co.kr/contents/news-2793" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.jobplanet.co.kr/contents/news-2793</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://velog.io/@leehyunho2001/%EA%B0%80%EB%B9%84%EC%A7%80-%EC%BB%AC%EB%A0%89%EC%85%98-%EB%AA%A8%EB%A5%B4%EC%8B%9C%EB%8A%94%EB%B6%84" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://velog.io/@leehyunho2001/%EA%B0%80%EB%B9%84%EC%A7%80-%EC%BB%AC%EB%A0%89%EC%85%98-%EB%AA%A8%EB%A5%B4%EC%8B%9C%EB%8A%94%EB%B6%84</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="http://localhost:3030/images/chocolate.png&quot;" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">http://localhost:3030/images/chocolate.png"</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="http://localhost:3030/images/vanilla.png&quot;" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">http://localhost:3030/images/vanilla.png"</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.youtube.com/watch?v=JBFT4KyEvoY" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.youtube.com/watch?v=JBFT4KyEvoY</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://github.com/DonghyunKim98/is_design_prototype" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://github.com/DonghyunKim98/is_design_prototype</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.habit-rabbit.shop" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.habit-rabbit.shop</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://forms.gle/kh1F3E85hV86BMnB9" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://forms.gle/kh1F3E85hV86BMnB9</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://junilhwang.github.io/TIL/Javascript/Design/Vanilla-JS-Virtual-DOM/#_1-%E1%84%80%E1%85%A1%E1%84%89%E1%85%A1%E1%86%BC%E1%84%83%E1%85%A9%E1%86%B7-virtualdom-%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://junilhwang.github.io/TIL/Javascript/Design/Vanilla-JS-Virtual-DOM/#_1-%E1%84%80%E1%85%A1%E1%84%89%E1%85%A1%E1%86%BC%E1%84%83%E1%85%A9%E1%86%B7-virtualdom-%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://articles.wesionary.team/why-useeffect-is-a-bad-place-to-make-api-calls-98a606735c1c" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://articles.wesionary.team/why-useeffect-is-a-bad-place-to-make-api-calls-98a606735c1c</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 10월 2일 일요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://velog.io/@happai079/CSS-%ED%81%AC%EB%A1%AC%EC%97%90%EC%84%9C-input-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%83%89-%EC%A0%9C%EA%B1%B0" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://velog.io/@happai079/CSS-%ED%81%AC%EB%A1%AC%EC%97%90%EC%84%9C-input-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%83%89-%EC%A0%9C%EA%B1%B0</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://stackoverflow.com/questions/66862421/enum-vs-as-const" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://stackoverflow.com/questions/66862421/enum-vs-as-const</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://blog.toycrane.xyz/typescript%EC%97%90%EC%84%9C-%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%83%81%EC%88%98-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0-e926db079f9" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://blog.toycrane.xyz/typescript%EC%97%90%EC%84%9C-%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%83%81%EC%88%98-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0-e926db079f9</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html#const-assertions" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html#const-assertions</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://youtu.be/BEho58_GsfM" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://youtu.be/BEho58_GsfM</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://velog.io/@teo/프론트엔드에서-MV-아키텍쳐란-무엇인가요" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://velog.io/@teo/프론트엔드에서-MV-아키텍쳐란-무엇인가요</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://yozm.wishket.com/magazine/detail/1663/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://yozm.wishket.com/magazine/detail/1663/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://d2.naver.com/helloworld/8540176" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://d2.naver.com/helloworld/8540176</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://codepen.io/cmhxyvxp/pen/QWrmROM" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://codepen.io/cmhxyvxp/pen/QWrmROM</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.youtube.com/watch?v=3DuyJf_XPtM" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.youtube.com/watch?v=3DuyJf_XPtM</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 10월 1일 토요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://ko.reactjs.org/docs/hooks-rules.html#gatsby-focus-wrapper" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://ko.reactjs.org/docs/hooks-rules.html#gatsby-focus-wrapper</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="http://withdog.me/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">http://withdog.me/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.udemy.com/user/bonnie-schulkin/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.udemy.com/user/bonnie-schulkin/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://react.vlpt.us/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://react.vlpt.us/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://yozm.wishket.com/magazine/detail/1376/?fbclid=IwAR3DGQtCbIev7Ho-R_JuEd-aUfmIzK5nl_QOEAJBVQt3lF69qqlTSMuVhpE" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://yozm.wishket.com/magazine/detail/1376/?fbclid=IwAR3DGQtCbIev7Ho-R_JuEd-aUfmIzK5nl_QOEAJBVQt3lF69qqlTSMuVhpE</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://ko.javascript.info/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://ko.javascript.info/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.coupang.com/vp/products/5050426694?itemId=6809953384&amp;vendorItemId=74102602322&amp;src=1042503&amp;spec=10304982&amp;addtag=400&amp;ctag=5050426694&amp;lptag=10304982I6809953384&amp;itime=20220930125139&amp;pageType=PRODUCT&amp;pageValue=5050426694&amp;wPcid=16545775786651051924443&amp;wRef=&amp;wTime=20220930125139&amp;redirect=landing&amp;gclid=CjwKCAjwhNWZBhB_EiwAPzlhNjtsZ1aRuluoaLwL1PIGlm64Kkv1zCOnXmMfKO-WI8c9ilhW-BIa9BoCCccQAvD_BwE&amp;campaignid=12207438463&amp;adgroupid=115720946583&amp;isAddedCart=" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.coupang.com/vp/products/5050426694?itemId=6809953384&amp;vendorItemId=74102602322&amp;src=1042503&amp;spec=10304982&amp;addtag=400&amp;ctag=5050426694&amp;lptag=10304982I6809953384&amp;itime=20220930125139&amp;pageType=PRODUCT&amp;pageValue=5050426694&amp;wPcid=16545775786651051924443&amp;wRef=&amp;wTime=20220930125139&amp;redirect=landing&amp;gclid=CjwKCAjwhNWZBhB_EiwAPzlhNjtsZ1aRuluoaLwL1PIGlm64Kkv1zCOnXmMfKO-WI8c9ilhW-BIa9BoCCccQAvD_BwE&amp;campaignid=12207438463&amp;adgroupid=115720946583&amp;isAddedCart=</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://stackoverflow.com/questions/73903600/why-type-t1-undefined-is-never-in-typescript" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://stackoverflow.com/questions/73903600/why-type-t1-undefined-is-never-in-typescript</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://yceffort.kr/2021/03/typescript-interface-vs-type" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://yceffort.kr/2021/03/typescript-interface-vs-type</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/showOpenFilePicker" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://developer.mozilla.org/en-US/docs/Web/API/Window/showOpenFilePicker</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://github.com/hrynko/vue-pdf-embed" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://github.com/hrynko/vue-pdf-embed</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://brunch.co.kr/@omniousofficial/42" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://brunch.co.kr/@omniousofficial/42</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.instagram.com/waterglasstoon/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.instagram.com/waterglasstoon/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.youtube.com/watch?v=89THSS5H5iE" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.youtube.com/watch?v=89THSS5H5iE</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/ko/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://developer.mozilla.org/ko/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 9월 30일 금요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://youtube.com/shorts/NgwpQwy9-lI?feature=share" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://youtube.com/shorts/NgwpQwy9-lI?feature=share</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://open.kakao.com/o/gPv2IsEe" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://open.kakao.com/o/gPv2IsEe</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://wonny.space/writing/work/engineer-resume" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://wonny.space/writing/work/engineer-resume</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://realdeveloper.pro/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%9D%B4%EB%A0%A5%EC%84%9C-%EC%9E%91%EC%84%B1%EB%B2%95" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://realdeveloper.pro/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%9D%B4%EB%A0%A5%EC%84%9C-%EC%9E%91%EC%84%B1%EB%B2%95</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://dev.to/helderberto/reactjs-tips-tricks-avoid-nested-render-functions-324" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://dev.to/helderberto/reactjs-tips-tricks-avoid-nested-render-functions-324</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://jfbta.tistory.com/71" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://jfbta.tistory.com/71</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://stackoverflow.com/questions/12574414/io-error-the-network-adapter-could-not-establish-the-connection" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://stackoverflow.com/questions/12574414/io-error-the-network-adapter-could-not-establish-the-connection</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://nakta.dev/how-to-manage-modals-1" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://nakta.dev/how-to-manage-modals-1</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://patterns-dev-kr.github.io/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://patterns-dev-kr.github.io/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://nextjs.org/conf/oct22" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://nextjs.org/conf/oct22</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://beta.reactjs.org/apis/react/useMemo" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://beta.reactjs.org/apis/react/useMemo</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://beta.reactjs.org/apis/react/useCallback" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://beta.reactjs.org/apis/react/useCallback</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 9월 29일 목요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://velog.io/tags/%EA%B5%AC%EA%B8%80%EC%8A%A4%ED%94%84%EB%A6%B0%ED%8A%B8" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://velog.io/tags/%EA%B5%AC%EA%B8%80%EC%8A%A4%ED%94%84%EB%A6%B0%ED%8A%B8</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://open.kakao.com/o/sdkC1pqc" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://open.kakao.com/o/sdkC1pqc</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.numble.it/eaf52a0e-fd9c-4abb-8c2b-4ae9526bcb96" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.numble.it/eaf52a0e-fd9c-4abb-8c2b-4ae9526bcb96</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.numble.it/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.numble.it/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://betterprogramming.pub/synchronous-state-in-react-using-hooks-dc77f43d8521" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://betterprogramming.pub/synchronous-state-in-react-using-hooks-dc77f43d8521</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://earth-kor.github.io/2021/01/16/%EB%B0%A9%EB%B2%95/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://earth-kor.github.io/2021/01/16/%EB%B0%A9%EB%B2%95/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://medium.com/@totuworld/%EB%82%B4%EA%B0%80-%EB%A7%8C%EB%82%9C-%EC%9D%BC%EC%9E%98%EB%9F%AC-%EC%8B%A0%EC%9E%85%EC%9D%98-%ED%8A%B9%EC%A7%95-75ad4dd7e243" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://medium.com/@totuworld/%EB%82%B4%EA%B0%80-%EB%A7%8C%EB%82%9C-%EC%9D%BC%EC%9E%98%EB%9F%AC-%EC%8B%A0%EC%9E%85%EC%9D%98-%ED%8A%B9%EC%A7%95-75ad4dd7e243</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.frontendpractice.com/projects" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.frontendpractice.com/projects</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://stackoverflow.com/questions/53253940/make-react-useeffect-hook-not-run-on-initial-render" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://stackoverflow.com/questions/53253940/make-react-useeffect-hook-not-run-on-initial-render</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/ko/docs/Web/API/URL/createObjectURL" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://developer.mozilla.org/ko/docs/Web/API/URL/createObjectURL</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://stackoverflow.com/questions/57890667/axios-interceptor-refresh-token-for-multiple-requests" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://stackoverflow.com/questions/57890667/axios-interceptor-refresh-token-for-multiple-requests</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://stackoverflow.com/questions/69802293/difference-between-using-arrow-function-or-function-for-onclick-in-reactjs" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://stackoverflow.com/questions/69802293/difference-between-using-arrow-function-or-function-for-onclick-in-reactjs</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://reactjs.org/docs/faq-functions.html" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://reactjs.org/docs/faq-functions.html</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.oreilly.com/library/view/high-performance-javascript/9781449382308/ch04.html" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.oreilly.com/library/view/high-performance-javascript/9781449382308/ch04.html</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://youtu.be/P626fwC5phM" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://youtu.be/P626fwC5phM</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://tanstack.com/query/v4/docs/guides/dependent-queries" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://tanstack.com/query/v4/docs/guides/dependent-queries</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="http://www.yes24.com/Product/Goods/92426632" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">http://www.yes24.com/Product/Goods/92426632</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 9월 28일 수요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://beomy.github.io/tech/browser/reflow-repaint/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://beomy.github.io/static/a061b86ded539904e8b39295bf3695a3/f635c/browser.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">[Browser] Reflow와 Repaint</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">브라우저의 화면이 수정될 때, 렌더링 과정을 최적화 하는 방법에 대해 이야기 할 것입니다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://beomy.github.io/favicon-32x32.png?v=964a167d80badc6402455502c767332d)"></div>
+              <div class="flex nowrap...">Beomy</div>
+            </div></div>
+        </a><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://barba.js.org/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://barba.js.org/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://stackoverflow.com/questions/71808023/transition-between-routes-in-react-router-dom-v6-3" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Transition between routes in react-router-dom v6.3</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">So I´m currently refactoring a website, and so I do with the rrd, which was on v5 in the previous website version.
+Now, that the  component doesn´t exist anymore we have to work with the new  compo...</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196)"></div>
+              <div class="flex nowrap...">Stack Overflow</div>
+            </div></div>
+        </a><a href="https://youtu.be/FdrEjwymzdY" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://youtu.be/FdrEjwymzdY</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://velog.io/tags/%EA%B5%AC%EA%B8%80%EC%8A%A4%ED%94%84%EB%A6%B0%ED%8A%B8" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://velog.io/tags/%EA%B5%AC%EA%B8%80%EC%8A%A4%ED%94%84%EB%A6%B0%ED%8A%B8</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.inflearn.com/studies/657454" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://cdn.inflearn.com/assets/brand/inflearn-brand.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">섹스 체위 추천 웹 서비스, 우가?우가! 프론트엔드 개발자 찾습니다 - 인프런 | 스터디</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">[잠자리에 찾아온 권태기][사진]연인 간의 권태기는 잠자리에도 찾아옵니다.어느새부터 사랑하는 사람과 보내는 밤이 지루하게만 느껴지는 것입니다.대부분 어렴풋이 이유를 알고 있습니다.똑같이 단조로운 패턴만 반복되는 섹스 때문이라는 것.어떻게든 변화를 줘 보려고 해도 얻을 수 ...</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.inflearn.com/icon-512x512.png)"></div>
+              <div class="flex nowrap...">인프런</div>
+            </div></div>
+        </a><a href="https://bit.ly/3fpymN9" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://bit.ly/3fpymN9</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://bit.ly/3RhBTuv" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://bit.ly/3RhBTuv</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://stackoverflow.com/questions/37979489/how-to-watch-and-reload-ts-node-when-typescript-files-change" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">How to watch and reload ts-node when TypeScript files change</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">I'm trying to run a dev server with TypeScript and an Angular application without transpiling ts files every time.
+What I found is that I can run .ts files with ts-node but I want also to watch .ts...</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196)"></div>
+              <div class="flex nowrap...">Stack Overflow</div>
+            </div></div>
+        </a><a href="https://www.youtube.com/watch?v=7neASrWEFEM&amp;ab_channel=%EB%93%9C%EB%A6%BC%EC%BD%94%EB%94%A9" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/7neASrWEFEM/maxresdefault.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">CSS Flexbox 완전 정리. 포트폴리오 만드는 날까지! | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Flexbox만 잘 이해하셔도 이제 본격적으로 웹사이트의 구조를 만들 수 있어요 ❤️(↙ 자세한 내용)___________________________💡 풀스택 개발 로드맵 ⇢ https://academy.dream-coding.com/pages/912e50🚀 엘리와 더 체계적...</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/88de6a77/img/favicon_32x32.png)"></div>
+              <div class="flex nowrap...">YouTube</div>
+            </div></div>
+        </a><a href="https://help.naver.com/service/30010/contents/17589?osType=PC&amp;lang=ko" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://ssl.pstatic.net/static/help/new_help/img/og_image.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">[301 리다이렉트(redirect) 설정 소개] : 서치어드바이저 고객센터</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">                                                                                                                                            URL에서 자동으로 다른 URL로 보내는 것을 리다이렉트(redirect)라고 합니다.​예를 들어, 브라우저 주소 입력창에 www.mysite.com 주소를 입력했는데 www.mysite.com/home 처럼 조금 다른 주소로 접속되었다면 사이트 첫 화면에 리다이렉트가 설정된 것입니다.​이러한 리다이렉트 사이트는 웹마스터도구에서 소유확인 되지 않으며, 웹 프로토콜(protocol) 표준인 301 리다이렉트일 경우에만 소유확인을 보장합니다.​참고로, 기술적으로 html 내 meta refresh를 사용하거나 자바스크립트(JavaScript)로 리다이렉트 처리하면 소유확인 할 수 없습니다.​아래 예시를 참고해 웹 표준에 따른 301 리다이렉트로 설정되어 있는지 확인하세요.​a. Meta refresh (웹 표준 아님)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ​b. 자바스크립트 (웹 표준 아님)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ​c. 301 redirect (웹 표준 준수)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ​위 내용이 어렵다면 사이트 개발자 또는 사이트 개발 업체에 문의하세요.​관련 자세한 내용은 검색엔진 최적화의 목적 가이드에서도 확인할 수 있습니다.​                                                                                            </div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://ssl.pstatic.net/static/help/new_help/img/favicon.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://thewebdev.info/2022/04/22/how-to-use-node-js-to-open-default-browser-and-navigate-to-a-specific-url/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://thewebdev.info/2022/04/22/how-to-use-node-js-to-open-default-browser-and-navigate-to-a-specific-url/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.educative.io/answers/how-to-open-a-url-in-the-browser-automatically-with-node" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.educative.io/answers/how-to-open-a-url-in-the-browser-automatically-with-node</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://yozm.wishket.com/magazine/detail/1376/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://yozm.wishket.com/magazine/detail/1376/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://mui.com/system/styled/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://mui.com/static/logo.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">styled() - MUI System</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Utility for creating styled components.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://mui.com/static/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://velog.io/@yjyoo/typescript-ts-node-%EC%84%A4%EC%B9%98" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://images.velog.io/velog.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">[typescript] ts-node 설치</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">ESM 모듈 시스템에서, ts-node 설치 시 참고</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://static.velog.io/favicons/favicon-32x32.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="http://localhost:3001/certify&quot;,addCertify)" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">http://localhost:3001/certify",addCertify)</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">W3Schools online HTML editor</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">The W3Schools online code editor allows you to edit code and view the result in your browser</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.w3schools.com/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://console.spec.whatwg.org/#log" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://console.spec.whatwg.org/#log</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 9월 27일 화요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://github.com/ramda/ramda/blob/master/source/type.js" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/483aed5d7cd79fe349e0786371dcad503ce8eb908dfd6cb479fc664906f94b0f/ramda/ramda">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">ramda/type.js at master · ramda/ramda</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">:ram: Practical functional Javascript. Contribute to ramda/ramda development by creating an account on GitHub.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://github.com/ramda/ramda/blob/master/source/internal/_clone.js" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/483aed5d7cd79fe349e0786371dcad503ce8eb908dfd6cb479fc664906f94b0f/ramda/ramda">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">ramda/_clone.js at master · ramda/ramda</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">:ram: Practical functional Javascript. Contribute to ramda/ramda development by creating an account on GitHub.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/toString#tostring%EC%9C%BC%EB%A1%9C_%EA%B0%9D%EC%B2%B4_%ED%81%B4%EB%9E%98%EC%8A%A4_%EA%B2%80%EC%82%AC" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Object.prototype.toString() - JavaScript | MDN</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">The toString() 은 문자열을 반환하는 object의 대표적인 방법이다</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.cbbd161b.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer-jaeny.tistory.com/111" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://developer-jaeny.tistory.com/111</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://wormwlrm.github.io/2019/09/08/Higher-Order-Component-pattern-in-Vue.html" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://wormwlrm.github.io/static/42a190de56ac0eafd6e1d917d87d0ce0/OgImage.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">React의 고차 컴포넌트(HOC) 패턴, 이제는 Vue에도 적용해보자 - 재그지그의 개발 블로그</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">고차 컴포넌트(Higher-order component) 패턴을 이용하면, 믹스인(Mixin)과는 또 다른 방법으로 재사용되는 코드를 여러 컴포넌트 간에 공유할 수 있습니다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://wormwlrm.github.io/favicon-32x32.png?v=c22a7b7b2797d0129bb9ff49505f6373)"></div>
+              <div class="flex nowrap...">재그지그의 개발 블로그</div>
+            </div></div>
+        </a><a href="https://cupick.co/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://dusuna.cafe24.com/IMG/cupick.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Cupick</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">홈 바리스타가 되어볼까요?☕ 커픽 Cupick 은 이미지만 보고 만들 수 있는, 음료 레시피를 확인하고 공유하는 서비스입니다.✨</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAMMOAADDDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOTk5ADk5OQI5OTkFOTk5ADk5OQAAAAAAAAAAAAAAAAAAAAAAOTk5ADk5OQE5OTkFOTk5ATk5OQAAAAAAOTk5ADk5OQk5OTl4OTk5szk5OUs5OTkAOTk5AAAAAAAAAAAAOTk5ADo6OgA5OTlWOTk5tDk5OW45OTkFOTk5ADk5OQA5OTk3OTk57zk5Of85OTnDOTk5DTk5OQAAAAAAAAAAADk5OQA5OTkVOTk50Tk5Of85OTnnOTk5Kzk5OQA5OTkAOTk5NDk5Oe85OTn/OTk55Tk5OSk5OTkAAAAAADY2NgA5OTkAOTk5Njk5Oe45OTn/OTk55zk5OSg5OTkAOTk5ADk5ORM5OTnMOTk5/zk5Of85OTmOOTk5CTk5OQA5OTkAOTk5DTk5OZ05OTn/OTk5/zk5Ob45OTkMOTk5ADk5OQA5OTkAOTk5dTk5Of05OTn/OTk59zk5Oag5OTldOTk5YDk5ObA5OTn6OTk5/zk5Ofo5OTllOTk5ADk5OQAAAAAAOTk5ADk5ORQ5OTmyOTk5/zk5Of85OTn/OTk5/Tk5Of05OTn/OTk5/zk5Of85OTmkOTk5Djk5OQAAAAAAAAAAADk5OQA5OTkAOTk5Hjk5OaM5OTn2OTk5/zk5Of85OTn/OTk5/zk5OfM5OTmYOTk5GDk5OQA5OTkAAAAAAAAAAAAAAAAAOTk5ADk5OQA5OTkLOTk5TDk5OZU5OTm3OTk5tjk5OZE5OTlFOTk5CDk5OQA5OTkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADk5OQA5OTkBOTk5Bjk5OQY5OTkBOTk5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAAx+MAAIfBAACDwQAAg8EAAIGBAADAAwAAwAMAAOAHAADwDwAA/D8AAP//AAD//wAA//8AAA==)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://docs.google.com/forms/d/e/1FAIpQLScIMbbQSU2FXCtmdppPhG7kDDL8P4Wvz1tqfoXtx5p-2c9hCQ/viewform?usp=sf_link" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://docs.google.com/forms/d/e/1FAIpQLScIMbbQSU2FXCtmdppPhG7kDDL8P4Wvz1tqfoXtx5p-2c9hCQ/viewform?usp=sf_link</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Window.matchMedia() - Web APIs | MDN</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">The Window interface's matchMedia() method
+  returns a new MediaQueryList object that can then be used to determine if
+  the document matches the media query string,
+  as well as to monitor the document to detect when it matches (or stops matching) that
+  media query.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.cbbd161b.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://github.com/lezhin/markup-guide#css-selector" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/fbba4e57a2fc832778751875a35e2bd260a646603c85f38dbf7fb55db5df4f54/lezhin/markup-guide">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">GitHub - lezhin/markup-guide: 레진 마크업(HTML/CSS) 가이드라인</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">레진 마크업(HTML/CSS) 가이드라인. Contribute to lezhin/markup-guide development by creating an account on GitHub.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://github.com/lezhin/markup-guide" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/fbba4e57a2fc832778751875a35e2bd260a646603c85f38dbf7fb55db5df4f54/lezhin/markup-guide">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">GitHub - lezhin/markup-guide: 레진 마크업(HTML/CSS) 가이드라인</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">레진 마크업(HTML/CSS) 가이드라인. Contribute to lezhin/markup-guide development by creating an account on GitHub.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://github.com/npm/rfcs/discussions/283" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/498c888ea1af7673462ac9119da156163e26b18c87c087a4fe0516db0e191d9e/npm/rfcs/discussions/283">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Configure --legacy-peer-deps with .npmrc · Discussion #283 · npm/rfcs</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Configure --legacy-peer-deps with .npmrc</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://dev.to/shubhamverma/implement-protected-routes-in-nextjs-37ml" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://res.cloudinary.com/practicaldev/image/fetch/s--l0lQDPuB--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/fpphxx30wwfkwrwsz8lq.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Implement Protected Routes in NextJS</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Protecting Routes from unauthenticated users is a crucial part of any app.  In this blog, I'll show... Tagged with react, nextjs, programming, security.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico)"></div>
+              <div class="flex nowrap...">DEV Community 👩‍💻👨‍💻</div>
+            </div></div>
+        </a><a href="https://pygmalion0220.tistory.com/entry/Vue-Dom%EC%A0%91%EA%B7%BC-%ED%95%98%EA%B8%B0-ref-refs" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://pygmalion0220.tistory.com/entry/Vue-Dom%EC%A0%91%EA%B7%BC-%ED%95%98%EA%B8%B0-ref-refs</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.udemy.com/course/best-react/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.udemy.com/course/best-react/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://ko.reactjs.org/docs/components-and-props.html" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://reactjs.org/logo-og.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Components와 Props – React</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">A JavaScript library for building user interfaces</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://ko.reactjs.org/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://en.wikipedia.org/wiki/Object_copying" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Deep_copy_in_progress.svg/200px-Deep_copy_in_progress.svg.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Object copying - Wikipedia</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://en.wikipedia.org/static/favicon/wikipedia.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://github.com/DonghyunKim98/is_design_prototype" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/4a38c182df10a09b6f6c92934763f261566c13c411478058dc1eb82bbd9b2557/DonghyunKim98/is_design_prototype">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">GitHub - DonghyunKim98/is_design_prototype: 2022-2학기 InformationSystem Design (정보시스템설계) 과목 프로토타입 결과물입니다.</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">2022-2학기 InformationSystem Design (정보시스템설계) 과목 프로토타입 결과물입니다. - GitHub - DonghyunKim98/is_design_prototype: 2022-2학기 InformationSystem Design (정보시스템설계) 과목 프로토타입 결과물입니다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://is-design-prototype.vercel.app/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">통합 챗봇 - 모든 민원을 하나의 사이트에서!</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">이제 모든 민원을 한 곳에서 관리해보세요!</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://is-design-prototype.vercel.app/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://fe-developers.kakaoent.com/2022/220922-make-cart-with-xstate/?fbclid=IwAR3uwSiQAXTteLMr37hi-d7JMJpQd1YZcBW3TYwCbiJBkWvYwZ8y-XdoV1U" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://fe-developers.kakaoent.com/static/kakaoEnt-e1e7f4766847f540602de68fd4e88456.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">자바스크립트로 만든 유한 상태 기계 XState</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">카카오엔터테인먼트 FE 기술블로그</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://fe-developers.kakaoent.com/favicon-32x32.png?v=10c812b36c81033c912411ee3b5499d0)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://reactrouter.com/en/main/utils/match-path" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://reactrouter.com/ogimage.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">matchPath v6.4.2</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://reactrouter.com/favicon-light.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 9월 26일 월요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://github.com/DefinitelyTyped/DefinitelyTyped/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/21547a30fd6b3eec08e3c3cddf755c874cd08bdec7166fc3646d7df31ac9c0db/DefinitelyTyped/DefinitelyTyped">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">GitHub - DefinitelyTyped/DefinitelyTyped: The repository for high quality TypeScript type definitions.</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">The repository for high quality TypeScript type definitions. - GitHub - DefinitelyTyped/DefinitelyTyped: The repository for high quality TypeScript type definitions.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-properties-of-array-instances-length" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">ECMAScript® 2023 Language SpecificationMenu</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://tc39.es/ecma262/img/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://medium.com/harrythegreat/%ED%94%84%EB%A6%AC%EB%9E%9C%EC%84%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%98%81%EB%AC%B8%EC%9D%B4%EB%A0%A5%EC%84%9C-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%8D%A8%EC%95%BC%ED%95%A0%EA%B9%8C-489d017d1e4a" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://miro.medium.com/max/482/1*dl7Q0pDzLXbMZGBIpGIXrQ.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">프리랜서 개발자 영문이력서 어떻게 써야할까?</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">최근 갑작스래 영문이력서를 작성할 일이 생겼습니다. Education, Certification, Cover Letter는 찾아보면 사용할 포맷이 많이 나옵니다. 하지만 문제는 Work Experience… 두세곳 오래 근무하지않고 주로 프로젝트 단위로 개발에 참여하는 프리랜서 혹은 SI에 종사하다보면 Work Expereince에 내새울만한 내용이 많이…</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://miro.medium.com/1*m-R_BkNf1Qjr1YbyOIJY2w.png)"></div>
+              <div class="flex nowrap...">Medium</div>
+            </div></div>
+        </a><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://yozm.wishket.com/magazine/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://yozm.wishket.com/static/renewal/img/news/og-img-main.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">요즘 사람들의 IT 매거진, 요즘IT</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">매일 업데이트되는 요즘 사람들의 IT 이야기! 개발, 디자인, 기획, 다양한 IT 콘텐츠와 함께 성장해보세요.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://yozm.wishket.com/static/renewal/img/news/favicon-32.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://frontender-ua.medium.com/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://miro.medium.com/max/2400/0*gXNjh86g-yiSa8qJ.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Fresh Frontend Links – Medium</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Read writing from Fresh Frontend Links on Medium.  Every day, Fresh Frontend Links and thousands of other voices read, write, and share important stories on Medium.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://miro.medium.com/1*m-R_BkNf1Qjr1YbyOIJY2w.png)"></div>
+              <div class="flex nowrap...">Medium</div>
+            </div></div>
+        </a><a href="https://news.hada.io/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://social.news.hada.io/index">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">GeekNews - 개발/기술/스타트업 뉴스 서비스</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">개발 뉴스, 기술 관련 새소식, 스타트업 정보와 노하우, 세상의 재미난 것들을 좋아하는 사람들을 위한 뉴스 사이트. 이메일 뉴스레터/트위터/슬랙 봇으로 구독 가능</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://news.hada.io/favicon.ico)"></div>
+              <div class="flex nowrap...">GeekNews</div>
+            </div></div>
+        </a><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&amp;mallGb=KOR&amp;barcode=9791162245262&amp;orderClick=LAG&amp;Kc=" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&amp;mallGb=KOR&amp;barcode=9791162245262&amp;orderClick=LAG&amp;Kc=</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.youtube.com/watch?v=UTbcrKssEKU&amp;t=597s" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://i.ytimg.com/vi/UTbcrKssEKU/maxresdefault.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">합격하는 개발자 자기소개서 | 이력서 피드백 -2 | 리뷰 | 첨삭 | 개발자 | 서류 | 자소서 | 면접 | 포트폴리오 | 합격 | 취준 | IT | 구독자 이벤트</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">여러분! 면접 노하우 편에서 언급했던 구독자 이벤트 기억하시나요? 후배님들의 이력서 및 포트폴리오를 받아 피드백 하는 이벤트를 진행했었는데요! 오늘은 바로 그 피드백 타임을 가져봤습니다 :) 스카이, 제리의 가감없는 피드백이 오갔다는데,,🥶영상을 보시고 추가로 궁금하신 사항이나 ...</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.youtube.com/s/desktop/88de6a77/img/favicon_32x32.png)"></div>
+              <div class="flex nowrap...">YouTube</div>
+            </div></div>
+        </a><a href="https://github.com/axios/axios/issues/3612#issuecomment-770224236" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/ec43a6cc7aea1d8b4a5a2f731bb3fd092cecfbfe0d8d048398b6c2cb98610f71/axios/axios/issues/3612">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">How to type axios error in Typescript? · Issue #3612 · axios/axios</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Describe the issue I have question how type axios error in Typescript. I know AxiosError type is exposed, but I don't think it should be used because it's unclear if it's an Axios Error when caught. Example Code import axios, {AxiosError...</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 9월 25일 일요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://fe-developers.kakaoent.com/2022/220922-make-cart-with-xstate/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://fe-developers.kakaoent.com/static/kakaoEnt-e1e7f4766847f540602de68fd4e88456.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">자바스크립트로 만든 유한 상태 기계 XState</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">카카오엔터테인먼트 FE 기술블로그</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://fe-developers.kakaoent.com/favicon-32x32.png?v=10c812b36c81033c912411ee3b5499d0)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://medium.com/humanscape-tech/type-vs-interface-%EC%96%B8%EC%A0%9C-%EC%96%B4%EB%96%BB%EA%B2%8C-f36499b0de50" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://miro.medium.com/max/1200/1*V9mw_wCi77o3dionKMd98A.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Type vs Interface, 언제 어떻게?</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">주의할 점은, 객체 타입이나 객체 타입 간의 곱 타입(Intersection Type, 교차 타입), 즉 정적으로 모양을 알 수 있는 객체 타입만 동작합니다. 따라서, 합 타입(Union Type, 결합 타입)은 extends와 implements 대신 다른 키워드로 관계를 정의해야 합니다. 그래서 TypeScript 팀은 가능한 Type Alias보단…</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://miro.medium.com/1*m-R_BkNf1Qjr1YbyOIJY2w.png)"></div>
+              <div class="flex nowrap...">Medium</div>
+            </div></div>
+        </a><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://poiemaweb.com/js-browser" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://poiemaweb.com/img/poiemaweb.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Javascript Environment | PoiemaWeb</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">대부분의 프로그래밍 언어는 운영체제(Operating System, OS) 위에서 실행되지만 웹 애플리케이션의 자바스크립트는 브라우저에서 HTML, CSS와 함께 실행된다. 따라서 브라우저 환경을 고려할 때 보다 효율적인 자바스크립트 프로그래밍이 가능하다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://poiemaweb.com/img/poiemaweb.jpg)"></div>
+              <div class="flex nowrap...">PoiemaWeb</div>
+            </div></div>
+        </a><a href="https://github.com/junghyeonsu/junghyeonsu.dev/tree/main/public" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/563ee8feb553745c3e09d4f13123604d7e13171052816a32124b430b921b5d7d/junghyeonsu/junghyeonsu.dev">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">junghyeonsu.dev/public at main · junghyeonsu/junghyeonsu.dev</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">👍 최고의 개발자가 될 정현수 블로그. Contribute to junghyeonsu/junghyeonsu.dev development by creating an account on GitHub.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://medium.com/@limsungmook/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94-%EC%99%9C-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EC%9D%84-%EC%84%A0%ED%83%9D%ED%96%88%EC%9D%84%EA%B9%8C-997f985adb42" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://medium.com/@limsungmook/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94-%EC%99%9C-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EC%9D%84-%EC%84%A0%ED%83%9D%ED%96%88%EC%9D%84%EA%B9%8C-997f985adb42</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://alvarotrigo.com/fullPage/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://raw.github.com/alvarotrigo/fullPage.js/master/examples/imgs/intro.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">fullPage scroll snapping. Create full screen pages fast and simple</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll sections jquery plugin. Mouse snap.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://alvarotrigo.com/fullPage/favicons/favicon-32x32.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://ba-gotocode131.tistory.com/m/134" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://k.kakaocdn.net/dn/2yBzU/btrCMMRkC86/HHg1K7aT8ib9hMQpQF0pc1/img.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">React로 이미지가 포함된 정보 DB에서 가져오기</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">어렵더라도 꾸준히 실천하면 된다.
+*사진출처 : 위키백과 쿼카(https://ko.wikipedia.org/wiki/%EC%BF%BC%EC%B9%B4)
+깃허브 : https://github.com/0131ryu</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://ba-gotocode131.tistory.com/favicon.ico)"></div>
+              <div class="flex nowrap...">프로그래밍 삽질 중</div>
+            </div></div>
+        </a><a href="https://replit.com/@NightlyHerb/IroncladSmallPipeline#index.js" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://storage.googleapis.com/replit/images/1657215193993_7e09bc05cf8b31acb1ebb32597a765ba.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">IroncladSmallPipeline - Node.js Repl</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Run Node.js code live in your browser. Write and run code in 50+ languages online with Replit, a powerful IDE, compiler, &amp; interpreter.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://replit.com/public/icons/favicon-196.png?v=2)"></div>
+              <div class="flex nowrap...">replit</div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 9월 24일 토요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="http://naengpa.netlify.app" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">http://naengpa.netlify.app</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://stackoverflow.com/questions/20945498/var-name-produces-strange-result-in-javascript" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">var name produces strange result in Javascript</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Lets say we have this code segment :
+
+var name = ["Apples","Oranges","Strawberries"];
+console.log(name.length);
+This code produces this weird result of 27 !! The issue seems to be with using the </div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196)"></div>
+              <div class="flex nowrap...">Stack Overflow</div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/ko/docs/Web/API/Web_Workers_API" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Web Workers API - Web API | MDN</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">웹 워커(Web worker)는 스크립트 연산을 웹 어플리케이션의 주 실행 스레드와 분리된 별도의 백그라운드 스레드에서 실행할 수 있는 기술입니다. 웹 워커를 통해 무거운 작업을 분리된 스레드에서 처리하면 주 스레드(보통 UI 스레드)가 멈추거나 느려지지 않고 동작할 수 있습니다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.cbbd161b.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://playcode.io/javascript" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">JavaScript Playground</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Super sleek javascript playground with instant live preview and console. Start code within seconds. No “npm run start” or anything.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://playcode.io/static/img/favicons/favicon.png)"></div>
+              <div class="flex nowrap...">PLAYCODE.IO</div>
+            </div></div>
+        </a><a href="https://github.com/makenotion/notion-sdk-js" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/6fb8e4ce57967365184a0902eab19fa75e5589bd4d4a91aa098c80ac9992ebd9/makenotion/notion-sdk-js">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">GitHub - makenotion/notion-sdk-js: Official Notion JavaScript Client</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Official Notion JavaScript Client. Contribute to makenotion/notion-sdk-js development by creating an account on GitHub.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://threejs.org/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://threejs.org/files/share.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Three.js – JavaScript 3D Library</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://threejs.org/files/favicon_white.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://cineshader.com/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://cineshader.com/assets/images/share.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">CineShader</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">A cinematic real-time shader visualiser brought to you by Lusion</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://cineshader.com/assets/images/android-icon-192x192.png)"></div>
+              <div class="flex nowrap...">CineShader</div>
+            </div></div>
+        </a><a href="https://github.com/velopert/velog-server" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/3eb92697ff74596da9de945b40bb93ca4422816fa7c150c05c4aeceea4163e8d/velopert/velog-server">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">GitHub - velopert/velog-server</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Contribute to velopert/velog-server development by creating an account on GitHub.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://youtu.be/gs1qM1TF5zA" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://youtu.be/gs1qM1TF5zA</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://gist.github.com/dohye1/4faa61076a72052deed0e2be729c693b" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://gist.github.com/dohye1/4faa61076a72052deed0e2be729c693b</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://gist.github.com/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://codesandbox.io/s/agitated-wood-leteml?file=/src/styles.css" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://codesandbox.io/static/img/banner.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">CodeSandbox</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">CodeSandbox is an online editor tailored for web applications.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(data:image/svg+xml;utf8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%20100%20100%27%3E%0A%3Cstyle%3E%0Asvg%20%7B%0Abackground:%20transparent;%0A%7D%0Apath%20%7B%0Afill:%20black;%0A%7D%0A@media%20(prefers-color-scheme:%20dark)%20%20%7B%0Apath%20%7B%0Afill:%20white;%0A%7D%0A%7D%0A%3C/style%3E%0A%3Cpath%20fill-rule=%27evenodd%27%20clip-rule=%27evenodd%27%20d=%27M81.8182%2018.1818V81.8182H18.1818V18.1818H81.8182ZM10%2090V10H90V90H10Z%27/%3E%0A%3C/svg%3E)"></div>
+              <div class="flex nowrap...">CodeSandbox</div>
+            </div></div>
+        </a><a href="https://musma.github.io/2019/08/23/nodejs-offline-deployment.html" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://musma.github.io/assets/profile-placeholder.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">오프라인 환경에 NodeJS 애플리케이션 배포하기</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">오프라인에서 npm install을???</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://musma.github.io/assets/icons/favicon.ico)"></div>
+              <div class="flex nowrap...">무스마 기술블로그</div>
+            </div></div>
+        </a><a href="https://studiomeal.com/archives/533" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://studiomeal.com/wp-content/uploads/2020/02/grid-og.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">이번에야말로 CSS Grid를 익혀보자</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">이 포스트에는 실제 코드가 적용된 부분들이 있으므로, 해당 기능을 잘 지원하는 최신 웹 브라우저로 보시는게 좋습니다. (대충 인터넷 익스플로러로만 안보면 된다는 이야기) 이 튜토리얼은 “차세대 CSS 레이아웃” 시리즈의 두번째 포스트입니다.혹시…</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://studiomeal.com/wp-content/themes/studiomeal2021/images/favicon.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://wormwlrm.github.io/2022/09/08/JavaScript-Date.html" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://wormwlrm.github.io/static/42a190de56ac0eafd6e1d917d87d0ce0/OgImage.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">왜 내가 작성한 JavaScript Date 코드가 서버에서는 다르게 보이는 거죠? - 재그지그의 개발 블로그</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">JavaScript에서 흔히 혼동되는 Date 객체에 대한 개념을 정리해봅니다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://wormwlrm.github.io/favicon-32x32.png?v=c22a7b7b2797d0129bb9ff49505f6373)"></div>
+              <div class="flex nowrap...">재그지그의 개발 블로그</div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 9월 23일 금요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.w3.org/Style/CSS/specs.en.html" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://www.w3.org/Style/CSS/clock">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">All CSS specifications</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Descriptions of all specifications under development by the W3C CSS working group.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.w3.org/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://triplexlab.tistory.com/126" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://triplexlab.tistory.com/126</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Proxy servers and tunneling - HTTP | MDN</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">When navigating through different networks of the Internet, proxy servers and HTTP tunnels are facilitating access to content on the World Wide Web. A proxy can be on the user's local computer, or anywhere between the user's computer and a destination server on the Internet. This page outlines some basics about proxies and introduces a few configuration options.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.cbbd161b.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Global_attributes/translate" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">translate - HTML: Hypertext Markup Language | MDN</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">translate 전역 특성은 페이지를 지역화할 때 요소의 Text 노드 자식 및 번역 가능한 특성의 값을 번역해야 되는지, 아니면 그대로 유지해야 하는지 나타내는 열거형 속성입니다. 가능한 값은 다음과 같습니다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.cbbd161b.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://github.com/webpack/webpack/issues/3974" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/d6c91e10149f7f4a019fd416e8d890ece28984487bc68818199f418177f7c256/webpack/webpack/issues/3974">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">"Uncaught ReferenceError exports is not defined" since 2.2.0-rc.5 · Issue #3974 · webpack/webpack</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Bug Bundle is incorrect and crashes with "exports is not defined". Unfortunately I can't share steps to reproduce, as the codebase is closed source. However, it definitely worked with 2.2.0-rc.4, so it must be a recent change. Bundle sho...</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://emotion.sh/docs/typescript" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://emotion.sh/docs/typescript</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://stackoverflow.com/a/63920094" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://stackoverflow.com/a/63920094</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://carbon.now.sh/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://carbon.now.sh/static/brand/banner.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Carbon</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Carbon is the easiest way to create and share beautiful images of your source code.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://carbon.now.sh/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://github.com/tipjs/javascript-style-guide" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/733869cefdaa23e7b616d4ee3ff38e3454ff7511f03d67e11aabb6dad6b04d54/tipjs/javascript-style-guide">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">GitHub - tipjs/javascript-style-guide: Airbnb JavaScript 스타일 가이드 한국어</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Airbnb JavaScript 스타일 가이드 한국어. Contribute to tipjs/javascript-style-guide development by creating an account on GitHub.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://nuli.navercorp.com/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://github.com/theKashey/react-remove-scroll-bar/issues/35" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/b11d89e72f9f298d11dcebf0e28d5509661b6fae8bfa7831fbc7f1c7a0c262d6/theKashey/react-remove-scroll-bar/issues/35">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Console error "cannot calculate scrollbar size because it is removed" · Issue #35 · theKashey/react-remove-scroll-bar</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">When an app XYZ is using a library that in turn is using react-remove-scroll-bar and at the same time, the XYZ app has the scrollbar removed for a different reason that can't be avoided. So the app has something like the following: &lt;body...</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://stackoverflow.com/questions/49056000/all-of-my-json-files-have-problems-loading-reference-schema-from-schemastore-az" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">All of my .json files have problems loading reference/schema from schemastore.azurewebsites.net</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">I'm working in VS Code and started getting this error yesterday.  All of my json files have this error, not just a few.  If I remember right there was an update to the program yesterday or the day ...</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196)"></div>
+              <div class="flex nowrap...">Stack Overflow</div>
+            </div></div>
+        </a><a href="https://json.schemastore.org/package%27:" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://json.schemastore.org/package%27:</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://json.schemastore.org/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://json.schemastore.org/package%27:" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://json.schemastore.org/package%27:</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://json.schemastore.org/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://yozm.wishket.com/magazine/detail/1702/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://yozm.wishket.com/media/news/1702/image005.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">개발자에게 물어봤습니다: ① 함께 일하고 싶은 개발자 | 요즘IT</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">이번 시리즈에서는 다양한 직무와 협업하는 IT 기업 직장인 중에서 개발자가 함께 일하고 싶어 하는 동료에 대해 다루고자 합니다. 오늘은 그중에서 개발자가 생각하는 ‘함께 일하고 싶은 개발자'에 대해 살펴볼 예정입니다. 여러 의견을 듣기 위해 2년 차 개발자부터 10년 차 개발자까지 총 8명의 개발자와 인터뷰를 진행해 보았습니다. 과연 개발자는 어떤 개발자와 함께 일하고 싶어 할까요?</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://yozm.wishket.com/static/renewal/img/news/favicon-32.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.typescriptlang.org/tsconfig#jsxImportSource" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.typescriptlang.org/tsconfig#jsxImportSource</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://github.com/unifyai/ivy" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/a84653e3cb82b2b64ba8447fd5febd1e5d21a243bbcebf0639cdbf342fcddceb/unifyai/ivy">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">GitHub - unifyai/ivy: The Unified Machine Learning Framework</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">The Unified Machine Learning Framework. Contribute to unifyai/ivy development by creating an account on GitHub.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://caniuse.com/css-container-queries" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://caniuse.com/img/browserstack.svg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">CSS Container Queries (Size) | Can I use... Support tables for HTML5, CSS3, etc</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">"Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://caniuse.com/img/favicon-128.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 9월 22일 목요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://github.com/ssi02014/react-query-tutorial" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/e8a44b76fc08d2566e8c6fd5484db1b3899264a04452ecc9e541dc2dc66c540a/ssi02014/react-query-tutorial">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">GitHub - ssi02014/react-query-tutorial: 😃  react-query에서 자주 사용되는 개념 정리</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">😃  react-query에서 자주 사용되는 개념 정리 . Contribute to ssi02014/react-query-tutorial development by creating an account on GitHub.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://bongra.tistory.com/m/108" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://k.kakaocdn.net/dn/bCFIRq/btrs7mJlmIE/XkGNMgpQx26uKUemKKsQz1/img.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">[기타] 웹팩(webpack)을 사용하는 이유</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">모찌바라기 님의 블로그입니다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://bongra.tistory.com/favicon.ico)"></div>
+              <div class="flex nowrap...">개발공작소</div>
+            </div></div>
+        </a><a href="https://create-react-app.dev/docs/production-build/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://create-react-app.dev/img/logo-og.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Creating a Production Build | Create React App</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">npm run build creates a build directory with a production build of your app. Inside the build/static directory will be your JavaScript and CSS files. Each filename inside of build/static will contain a unique hash of the file contents. This hash in the file name enables long term caching techniques.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://create-react-app.dev/img/favicon/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://webactually.com/2020/03/03/%3Csection%3E%EC%9D%84-%EB%B2%84%EB%A6%AC%EA%B3%A0-HTML5-%3Carticle%3E%EC%9D%84-%EC%8D%A8%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://webactually.com/2020/03/03/%3Csection%3E%EC%9D%84-%EB%B2%84%EB%A6%AC%EA%B3%A0-HTML5-%3Carticle%3E%EC%9D%84-%EC%8D%A8%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0/</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.boostcourse.org/cs112" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://cphinf.pstatic.net/mooc/20201217_207/1608193040608UGyni_PNG/boostcourse_cs50_720_426.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">모두를 위한 컴퓨터 과학 (CS50 2019)</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">모두를 위한 컴퓨터 과학 (CS50 2019) </div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://ssl.pstatic.net/static/m/mooc/p/partner/boostcrs/favicon-16x16.png)"></div>
+              <div class="flex nowrap...">boostcourse : 부스트코스</div>
+            </div></div>
+        </a><a href="https://react-hook-form.com/get-started/#Applyvalidation" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://raw.githubusercontent.com/react-hook-form/documentation/master/src/images/react-hook-form-og.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Get Started</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Performant, flexible and extensible forms with easy-to-use validation.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://react-hook-form.com/favicon-32x32.png?v=33dbda822526f0cf9f02a335ee65d925)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://create-react-app.dev/docs/deployment/#building-for-relative-paths" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://create-react-app.dev/img/logo-og.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Deployment | Create React App</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">npm run build creates a build directory with a production build of your app. Set up your favorite HTTP server so that a visitor to your site is served index.html, and requests to static paths like /static/js/main..js are served with the contents of the /static/js/main..js file. For more information see the production build section.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://create-react-app.dev/img/favicon/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Array.prototype.toLocaleString() - JavaScript | MDN</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">toLocaleString() 메서드는 배열의 요소를 나타내는 문자열을 반환합니다. 요소는 toLocaleString 메서드를 사용하여 문자열로 변환되고 이 문자열은 locale 고유 문자열(가령 쉼표 “,”)에 의해 분리됩니다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.cbbd161b.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/toLocaleString" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Object.prototype.toLocaleString() - JavaScript | MDN</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">toLocaleString() 메서드는 객체로 된 문자열을 반환합니다. 이 메서드는 지역별로 다른 객체로 재정의되어 표시됩니다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.cbbd161b.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Number.prototype.toLocaleString() - JavaScript | MDN</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">The toLocaleString() method returns a string with a language-sensitive representation of this number. In implementations with Intl.NumberFormat API support, this method simply calls Intl.NumberFormat.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.cbbd161b.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://codesandbox.io/s/inspiring-cache-57di8e?file=/src/App.js" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://codesandbox.io/api/v1/sandboxes/57di8e/screenshot.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">inspiring-cache-57di8e - CodeSandbox</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">inspiring-cache-57di8e using react, react-dom, react-scripts</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(data:image/svg+xml;utf8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%20100%20100%27%3E%0A%3Cstyle%3E%0Asvg%20%7B%0Abackground:%20transparent;%0A%7D%0Apath%20%7B%0Afill:%20black;%0A%7D%0A@media%20(prefers-color-scheme:%20dark)%20%20%7B%0Apath%20%7B%0Afill:%20white;%0A%7D%0A%7D%0A%3C/style%3E%0A%3Cpath%20fill-rule=%27evenodd%27%20clip-rule=%27evenodd%27%20d=%27M81.8182%2018.1818V81.8182H18.1818V18.1818H81.8182ZM10%2090V10H90V90H10Z%27/%3E%0A%3C/svg%3E)"></div>
+              <div class="flex nowrap...">CodeSandbox</div>
+            </div></div>
+        </a><a href="https://open.kakao.com/o/sXlGn0Ce" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://iopen.kakaocdn.net/img/og/v1/ko_scrap_sv_01.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">이력서피드백</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://iopen.kakaocdn.net/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://ui.toast.com/weekly-pick/ko_20200228" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://ui.toast.com/weekly-pick/ko_20200228</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://lunit.gitbook.io/redux-in-korean/api/createstore" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://app.gitbook.com/share/space/thumbnail/-LN3FIHJeGSyZQ0Tp3l2/page/-LN3FWwmaSU7wO23idZM.png?color=%23744CBC&amp;logo=https%3A%2F%2F2613249244-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fspaces%252F-LN3FIHJeGSyZQ0Tp3l2%252Favatar.png%3Fgeneration%3D1537695859877957%26alt%3Dmedia&amp;theme=">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">createStore</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://2613249244-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/spaces%2F-LN3FIHJeGSyZQ0Tp3l2%2Favatar.png?generation=1537695859877957&amp;alt=media)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://images.app.goo.gl/SDfZSh7xLEkSRJnQ9" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://images.app.goo.gl/SDfZSh7xLEkSRJnQ9</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://github.com/eGovFramework/egovframe-template-simple-react" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/7afae6650f5ce3998a5d1230e0f5ae5451d7ab09878f6ffec80f6da7408a317f/eGovFramework/egovframe-template-simple-react">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">GitHub - eGovFramework/egovframe-template-simple-react</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Contribute to eGovFramework/egovframe-template-simple-react development by creating an account on GitHub.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://medium.com/geekculture/strong-typed-i18n-in-react-c43281de720c" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://miro.medium.com/max/825/1*EHEs25cD-p9lgu0uSmRJHw.jpeg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Strong-typed I18N in React</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Adding i18n support to your app can be painful. Extracting all text strings from JSX to translation files and replacing them with keys is meticulous monotonous work. One small misspelling and oops…</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://miro.medium.com/1*m-R_BkNf1Qjr1YbyOIJY2w.png)"></div>
+              <div class="flex nowrap...">Medium</div>
+            </div></div>
+        </a><a href="https://n.news.naver.com/article/138/0002132945" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://imgnews.pstatic.net/image/138/2022/09/20/0002132945_001_20220920161601391.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">[오픈테크넷2022] 과기정통부, '깃허브' 보완재, '케이코드' 플랫폼 구축 한다</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">과학기술정보통신부(이하 과기정통부)가 국내 오픈소스 SW 생태계 확장을 위해 오픈소스 플랫폼인 ‘케이코드(K-Code)’ 구축에 나섰다. 과기정통부는 케이코드 플랫폼을 ‘깃허브’ 등 글로벌 오픈소스 플랫폼을 대체하는</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://mimgnews.pstatic.net/image/news/m/2014/favicon/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://codechacha.com/ko/javascript-sorting-arr/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">JavaScript - 배열 정렬 방법 (오름차순, 내림차순)</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">자바스크립트에서 문자열, 숫자, 객체 배열을 정렬하는 방법을 소개합니다. 문자열 배열의 경우 `sort()` 호출 시, 알파벳 순서로 정렬됩니다. 숫자 배열에 `sort()` 수행 시, 숫자를 문자열로 변환하여 정렬을 합니다. 문자열 `11`은 `2`보다 작기 때문에 아래와 같이 정렬됩니다. 객체 배열 정렬도, 아래와 같이 비교 함수를 구현하면 됩니다. 비교할 요소를 선택하고 크기를 비교하면 됩니다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://codechacha.com/assets/icon/android-icon-192x192.png)"></div>
+              <div class="flex nowrap...">codechacha</div>
+            </div></div>
+        </a><a href="https://joshua1988.github.io/ts/usage/declaration.html" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">d.ts 파일 | 타입스크립트 핸드북</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">타입스크립트를 가장 쉽고 빠르게 배우는 방법</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://joshua1988.github.io/ts/ts.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://velog.io/@leehyunho2001/Input-%EC%95%84%EC%A7%81%EB%8F%84-useState%EB%A1%9C-%EA%B4%80%EB%A6%AC-%ED%95%98%EC%8B%9C%EB%8A%94%EB%B6%84-%EA%B3%BC%EA%B1%B0%EC%9D%98-%EB%82%98%EC%9E%85%EB%8B%88%EB%8B%A4%EB%A7%8C-%EB%AC%B8%EC%A0%9C%EB%9D%BC%EB%8F%84" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://velog.velcdn.com/images/leehyunho2001/post/525b4083-2fcc-447e-8cc6-0ecf784c882d/image.gif">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Input 아직도 useState로 관리 하시는분? (feat. react-hook-form)</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">input 하나만 핸들링 해도 모두 리랜더링 되는 현상</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://static.velog.io/favicons/favicon-32x32.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://react-hook-form.com/api" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://raw.githubusercontent.com/react-hook-form/documentation/master/src/images/react-hook-form-og.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">API Documentation</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Performant, flexible and extensible forms with easy-to-use validation.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://react-hook-form.com/favicon-32x32.png?v=33dbda822526f0cf9f02a335ee65d925)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Spread_syntax#%EC%9D%B4%ED%84%B0%EB%9F%AC%EB%B8%94_%EC%A0%84%EC%9A%A9" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">전개 구문 - JavaScript | MDN</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">전개 구문을 사용하면 배열이나 문자열과 같이 반복 가능한 문자를 0개 이상의 인수 (함수로 호출할 경우) 또는 요소 (배열 리터럴의 경우)로 확장하여, 0개 이상의 키-값의 쌍으로 객체로 확장시킬 수 있습니다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.cbbd161b.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.inflearn.com/course/infcon2022" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">[무료] 인프콘 2022 다시보기 - 인프런 | 강의</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">인프런의 첫 오프라인 콘퍼런스, 인프콘 2022에서 진행된 오프닝 및 발표 세션을 영상으로 다시 보실 수 있습니다.,  - 강의 소개 | 인프런...</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.inflearn.com/icon-512x512.png)"></div>
+              <div class="flex nowrap...">인프런</div>
+            </div></div>
+        </a><a href="https://www.npmjs.com/package/react-awesome-reveal#installation" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://static.npmjs.com/338e4905a2684ca96e08c7780fc68412.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">react-awesome-reveal</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">React components to add reveal animations using the Intersection Observer API and CSS Animations.. Latest version: 4.1.0, last published: 7 days ago. Start using react-awesome-reveal in your project by running `npm i react-awesome-reveal`. There are 11 other projects in the npm registry using react-awesome-reveal.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png)"></div>
+              <div class="flex nowrap...">npm</div>
+            </div></div>
+        </a><a href="https://github.com/rnosov/react-reveal/issues/58" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/63d21368653c22ada021ea1e0de825bb99b259893c46ea81ae1485dd22a25be5/rnosov/react-reveal/issues/58">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Add Typescript support · Issue #58 · rnosov/react-reveal</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Would be nice to get some typings for this awesome project!</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://github.com/rnosov/react-reveal/issues/99" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://opengraph.githubassets.com/a99c376b77f91b8d5fac1909d43e73d97e22b2aa6463faac49a6371498ae227b/rnosov/react-reveal/issues/99">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Add @types/react-reveal · Issue #99 · rnosov/react-reveal</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://github.githubassets.com/favicons/favicon.svg)"></div>
+              <div class="flex nowrap...">GitHub</div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#valueasnumber" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">HTMLInputElement - Web APIs | MDN</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">The HTMLInputElement interface provides special properties and methods for manipulating the options, layout, and presentation of &lt;input> elements.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.cbbd161b.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://smoothiecoding.kr/%EC%9E%90%EB%B0%94-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://smoothiecoding.kr/wp-content/uploads/2021/03/javainstance-1.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">자바 인스턴스 | 자바 입문강좌 10 - 스무디코딩</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">자바 인스턴스란 무엇인지 이해합니다.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://smoothiecoding.kr/wp-content/uploads/2021/02/cropped-favsc-32x32.png)"></div>
+              <div class="flex nowrap...">스무디코딩</div>
+            </div></div>
+        </a><a href="https://naver.me/5XDvOCoE" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://naver.me/5XDvOCoE</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Storage.getItem() - Web APIs | MDN</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">The getItem() method of the Storage
+  interface, when passed a key name, will return that key's value, or null if
+  the key does not exist, in the given Storage object.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.cbbd161b.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a>
+    </div><div class="p(0/20) pt(60) bold">2022년 9월 21일 수요일
+</div>
+    <div class="grid gap(20) m(auto) p(20) svelte-1k33l94"><a href="https://nextjs.org/learn/foundations/about-nextjs" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://nextjs.org/static/twitter-cards/learn-foundations.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Learn | Next.js</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Production grade React applications that scale. The world’s leading companies use Next.js by Vercel to build pre-rendered applications, static websites, and more.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://nextjs.org/static/favicon/favicon-32x32.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://discord.gg/ZCFTMTfGQj" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://discord.gg/ZCFTMTfGQj</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/env" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">env() - CSS: Cascading Style Sheets | MDN</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">The env() CSS function can be used to insert the value of a user-agent defined environment variable into your CSS, in a similar fashion to the var() function and custom properties. The difference is that, as well as being user-agent defined rather than user-defined, environment variables are globally scoped to a document, whereas custom properties are scoped to the element(s) on which they are declared.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.cbbd161b.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.hanjonglee.com/503d381e-f955-4a23-8a58-0627d6e7be7f" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F5953bc4c-d596-42f1-b491-28051b739727%2FUntitled.jpeg&amp;blockId=ee6c42b3-a7bb-458b-aea4-177ad54bceda&amp;width=2400">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">JSConf Korea 2022 후기</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"> </div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://oopy.lazyrockets.com/api/rest/cdn/image/4da10ee0-4429-46ce-a441-606493de23a2.png?d=16)"></div>
+              <div class="flex nowrap...">JSConf Korea 2022 후기</div>
+            </div></div>
+        </a><a href="https://www.thisdot.co/blog/how-to-create-a-custom-react-renderer" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://www.thisdot.co/blog/how-to-create-a-custom-react-renderer</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://web.dev/inp/" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://web-dev.imgix.net/image/FNkVSAX8UDTTQWQkKftSgGe9clO2/uZ3hQS2EPrA9csOgkoXI.png?auto=format&amp;fit=max&amp;w=1200&amp;fm=auto">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Interaction to Next Paint (INP)</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">This post introduces the Interaction to Next Paint (INP) metric and explains how it works, how to measure it, and offers suggestions on how to improve it. </div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://web.dev/images/favicon-32x32.png)"></div>
+              <div class="flex nowrap...">web.dev</div>
+            </div></div>
+        </a><a href="https://web.dev/tbt/?utm_source=devtools" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://web-dev.imgix.net/image/FNkVSAX8UDTTQWQkKftSgGe9clO2/uZ3hQS2EPrA9csOgkoXI.png?auto=format&amp;fit=max&amp;w=1200&amp;fm=auto">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Total Blocking Time (TBT)</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">This post introduces the Total Blocking Time (TBT) metric and explains how to measure it </div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://web.dev/images/favicon-32x32.png)"></div>
+              <div class="flex nowrap...">web.dev</div>
+            </div></div>
+        </a><a href="https://tailwindcss.com/blog/automatic-class-sorting-with-prettier" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://tailwindcss.com/_next/static/media/social-card-large.a6e71726.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Automatic Class Sorting with Prettier - Tailwind CSS</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">People have been talking about the best way to sort your utility classes in Tailwind projects for at least four years. Today we’re excited to announce that you can finally stop worrying about it with the release of our official Prettier plugin for Tailwind CSS.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://tailwindcss.com/favicons/favicon-32x32.png?v=3)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://eslint.org/docs/latest/rules/no-use-before-define" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://eslint.org/icon-512.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">no-use-before-define - ESLint - Pluggable JavaScript Linter</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript. Maintain your code quality with ease.
+</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://eslint.org/favicon.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://tailwindcss.com/docs/reusing-styles" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://tailwindcss.com/_next/static/media/social-card-large.a6e71726.jpg">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">Reusing Styles - Tailwind CSS</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">Managing duplication and creating reusable abstractions.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://tailwindcss.com/favicons/favicon-32x32.png?v=3)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://youtu.be/37-tOIslMT4" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">https://youtu.be/37-tOIslMT4</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)"></div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(undefined)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">URL.createObjectURL() - Web APIs | MDN</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">The URL.createObjectURL() static
+  method creates a string containing a URL representing the object
+  given in the parameter.</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://developer.mozilla.org/favicon-48x48.cbbd161b.png)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a><a href="https://www.data.go.kr/data/15050410/fileData.do?recommendDataYn=Y" target="_blank" class="vbox w(~100%) h(200~) bg(#fff) b(#000.1) r(8) clip transition(.3s) hover:box-shadow(0/0/10px/#000.1) pointer"><img class="cover h(~240)" src="http://data.go.kr/images/biz/data-search/bg-nation.png">
+          <div class="flex vbox p(16) gap(8)"><div class="bold">행정안전부_도로명주소 위치정보 요약DB_20200831</div>
+            <div class="flex c(#999) font(13)"><div class="line-clamp(5)">도로명주소와 건물 주출입구 좌표가 매핑된 위치정보 요약DB</div></div>
+            <div class="hbox(bottom) font(10) c(#999) gap(4)"><div class="contain w(16) h(16)" style="background-image: url(https://www.data.go.kr/images/biz/DATA.ico)"></div>
+              <div class="flex nowrap..."></div>
+            </div></div>
+        </a>
+    </div></div>
+
+
+
+
+		<script type="module" data-sveltekit-hydrate="gy1fn6">
+		import { set_public_env, start } from "/teo-yu-frontend/_app/immutable/start-341e1fee.js";
+
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="gy1fn6"]').parentNode,
+			paths: {"base":"/teo-yu-frontend","assets":"/teo-yu-frontend"},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				node_ids: [0, 6],
+				params: {},
+				routeId: "link12"
+			}
+		});
+	</script>
+	</div>
+</body>
+</html>
