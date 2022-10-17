@@ -15,25 +15,25 @@
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
-    "@typescript-eslint/eslint-plugin": "^5.35.1",
-    "@typescript-eslint/parser": "^5.35.1",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
     "adorable-css": "^1.2.4",
-    "eslint": "^8.23.0",
+    "eslint": "^8.25.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "gh-pages": "^4.0.0",
     "link-preview-generator": "^1.1.0",
-    "link-preview-js": "^3.0.3",
+    "link-preview-js": "^3.0.4",
     "open-graph-scraper": "^4.11.1",
-    "svelte": "^3.49.0",
-    "svelte-check": "^2.8.1",
+    "svelte": "^3.52.0",
+    "svelte-check": "^2.9.2",
     "svelte-preprocess": "^4.10.7",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
     "tslib": "^2.4.0",
-    "typescript": "^4.8.2"
+    "typescript": "^4.8.4"
   },
   "type": "module",
   "dependencies": {
-    "vite": "^3.0.9"
+    "vite": "^3.1.8"
   }
 }
